@@ -11,7 +11,7 @@ import UIKit
 private let iconLeftMarginSize:     CGFloat = 8
 private let textLeftOffsetFromIcon: CGFloat = 12
 
-class IconTextField: UITextField {
+@IBDesignable class IconTextField: UITextField {
 
     @IBInspectable var icon: UIImage?
     

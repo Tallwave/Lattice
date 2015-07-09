@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_004_girl"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
@@ -41,6 +41,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_203_lock"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
                                 <rect key="frame" x="16" y="177" width="568" height="44"/>
@@ -75,6 +78,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="glyphicons_004_girl" width="22" height="22"/>
+        <image name="glyphicons_006_user_add" width="28" height="22"/>
+        <image name="glyphicons_203_lock" width="21" height="26"/>
     </resources>
 </document>
