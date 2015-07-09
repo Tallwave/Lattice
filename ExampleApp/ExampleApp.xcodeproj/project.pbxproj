@@ -133,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FAC6971B4F07A400BBC161 /* Behavior.swift */,
+				A7FAC6A51B4F342000BBC161 /* ImagePicking */,
 				A7FAC6991B4F08A600BBC161 /* UITextField */,
 			);
 			path = Behaviors;
@@ -163,6 +164,13 @@
 				A7FAC69F1B4F0D8C00BBC161 /* ArrayExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7FAC6A51B4F342000BBC161 /* ImagePicking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ImagePicking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

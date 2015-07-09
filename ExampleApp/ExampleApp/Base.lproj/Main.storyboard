@@ -74,6 +74,22 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="JkV-ao-Rpj" customClass="TextFieldBehaviorContainer" customModule="ExampleApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="g5c-Wg-cRd"/>
+                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="FBW-jk-zlv"/>
+                        <outletCollection property="behaviors" destination="2CJ-vn-ovy" collectionClass="NSMutableArray" id="ROt-pU-JcO"/>
+                        <outletCollection property="behaviors" destination="g44-Ah-fNv" collectionClass="NSMutableArray" id="yAc-qE-4eM"/>
+                    </connections>
+                </customObject>
+                <customObject id="2CJ-vn-ovy" customClass="TextFieldDoneBehavior" customModule="ExampleApp" customModuleProvider="target"/>
+                <customObject id="g44-Ah-fNv" customClass="TextFieldMaxLengthBehavior" customModule="ExampleApp" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
         </scene>
     </scenes>
