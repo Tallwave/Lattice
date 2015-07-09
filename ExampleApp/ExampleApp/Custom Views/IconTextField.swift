@@ -20,10 +20,8 @@ private let textLeftOffsetFromIcon: CGFloat = 12
     // MARK: - Overrides
     override func layoutSubviews() {
         if let icon = icon {
-            println("size: \(icon.size.width)")
             let y = bounds.midY - (icon.size.height / 2)
             let imageFrame = CGRect(origin: CGPoint(x: iconLeftMarginSize, y: y), size: icon.size)
-            println("image frame: \(imageFrame)")
             iconImageView = UIImageView(frame: imageFrame)
             iconImageView?.contentMode = .ScaleAspectFit
             iconImageView?.image = icon
