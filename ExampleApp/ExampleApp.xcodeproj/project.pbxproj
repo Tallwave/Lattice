@@ -13,6 +13,7 @@
 		A7BF39DC1B4EFE7800381D72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BF39DB1B4EFE7800381D72 /* Images.xcassets */; };
 		A7BF39DF1B4EFE7800381D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BF39DD1B4EFE7800381D72 /* LaunchScreen.xib */; };
 		A7BF39EB1B4EFE7800381D72 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */; };
+		A7BF39F71B4F03EF00381D72 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF39F61B4F03EF00381D72 /* IconTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A7BF39E41B4EFE7800381D72 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BF39E91B4EFE7800381D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
+		A7BF39F61B4F03EF00381D72 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		A7BF39D11B4EFE7800381D72 /* ExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7BF39F51B4F03D200381D72 /* Custom Views */,
 				A7BF39F41B4F018600381D72 /* Behaviors */,
 				A7BF39D41B4EFE7800381D72 /* AppDelegate.swift */,
 				A7BF39D61B4EFE7800381D72 /* ViewController.swift */,
@@ -118,6 +121,14 @@
 			children = (
 			);
 			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		A7BF39F51B4F03D200381D72 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF39F61B4F03EF00381D72 /* IconTextField.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			files = (
 				A7BF39D71B4EFE7800381D72 /* ViewController.swift in Sources */,
 				A7BF39D51B4EFE7800381D72 /* AppDelegate.swift in Sources */,
+				A7BF39F71B4F03EF00381D72 /* IconTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
