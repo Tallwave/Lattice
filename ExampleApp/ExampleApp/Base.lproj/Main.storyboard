@@ -34,13 +34,8 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-<<<<<<< Updated upstream
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="125" width="568" height="44"/>
-=======
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="126" width="568" height="44"/>
->>>>>>> Stashed changes
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
                                 </constraints>
@@ -50,13 +45,8 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_203_lock"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-<<<<<<< Updated upstream
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
-                                <rect key="frame" x="16" y="177" width="568" height="44"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
                                 <rect key="frame" x="16" y="178" width="568" height="44"/>
->>>>>>> Stashed changes
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.22352941176470589" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4De-RZ-S5N"/>
