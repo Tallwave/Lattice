@@ -14,6 +14,7 @@
 		A7BF39DF1B4EFE7800381D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BF39DD1B4EFE7800381D72 /* LaunchScreen.xib */; };
 		A7BF39EB1B4EFE7800381D72 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */; };
 		A7BF39F71B4F03EF00381D72 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF39F61B4F03EF00381D72 /* IconTextField.swift */; };
+		A7F4D4DB1B4F417F000A2F6E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4D4DA1B4F417F000A2F6E /* ImagePicker.swift */; };
 		A7FAC6981B4F07A400BBC161 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAC6971B4F07A400BBC161 /* Behavior.swift */; };
 		A7FAC69B1B4F08C300BBC161 /* TextFieldBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAC69A1B4F08C300BBC161 /* TextFieldBehavior.swift */; };
 		A7FAC69D1B4F092100BBC161 /* TextFieldBehaviorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAC69C1B4F092100BBC161 /* TextFieldBehaviorContainer.swift */; };
@@ -44,6 +45,7 @@
 		A7BF39E91B4EFE7800381D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
 		A7BF39F61B4F03EF00381D72 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
+		A7F4D4DA1B4F417F000A2F6E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A7FAC6971B4F07A400BBC161 /* Behavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
 		A7FAC69A1B4F08C300BBC161 /* TextFieldBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldBehavior.swift; path = UITextField/TextFieldBehavior.swift; sourceTree = "<group>"; };
 		A7FAC69C1B4F092100BBC161 /* TextFieldBehaviorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldBehaviorContainer.swift; path = UITextField/TextFieldBehaviorContainer.swift; sourceTree = "<group>"; };
@@ -169,8 +171,9 @@
 		A7FAC6A51B4F342000BBC161 /* ImagePicking */ = {
 			isa = PBXGroup;
 			children = (
+				A7F4D4DA1B4F417F000A2F6E /* ImagePicker.swift */,
 			);
-			name = ImagePicking;
+			path = ImagePicking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +283,7 @@
 				A7FAC6A41B4F32BE00BBC161 /* TextFieldMaxLengthBehavior.swift in Sources */,
 				A7BF39D51B4EFE7800381D72 /* AppDelegate.swift in Sources */,
 				A7FAC6A21B4F327F00BBC161 /* TextFieldDoneBehavior.swift in Sources */,
+				A7F4D4DB1B4F417F000A2F6E /* ImagePicker.swift in Sources */,
 				A7FAC69D1B4F092100BBC161 /* TextFieldBehaviorContainer.swift in Sources */,
 				A7BF39F71B4F03EF00381D72 /* IconTextField.swift in Sources */,
 			);

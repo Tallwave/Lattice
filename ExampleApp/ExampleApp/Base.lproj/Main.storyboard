@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to Faceoogle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-lC-lxc">
-                                <rect key="frame" x="221.5" y="40" width="157.5" height="20.5"/>
+                                <rect key="frame" x="221" y="40" width="158" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="68.5" width="568" height="44"/>
+                                <rect key="frame" x="16" y="69" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m56-f3-IUu"/>
                                 </constraints>
@@ -34,8 +34,13 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+<<<<<<< Updated upstream
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="125" width="568" height="44"/>
+=======
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="126" width="568" height="44"/>
+>>>>>>> Stashed changes
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
                                 </constraints>
@@ -45,8 +50,13 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_203_lock"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+<<<<<<< Updated upstream
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
                                 <rect key="frame" x="16" y="177" width="568" height="44"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
+                                <rect key="frame" x="16" y="178" width="568" height="44"/>
+>>>>>>> Stashed changes
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.22352941176470589" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4De-RZ-S5N"/>
@@ -55,6 +65,9 @@
                                     <color key="titleColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Nev-Kt-1sw" kind="show" id="5MV-NE-gV1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -91,6 +104,60 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t5g-Un-3Bh">
+            <objects>
+                <viewController id="Nev-Kt-1sw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eb1-Dj-2Mq"/>
+                        <viewControllerLayoutGuide type="bottom" id="kZq-PV-ZcQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SQS-aS-Vw4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-Ps-BKs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="506"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9O-wl-TeO">
+                                <rect key="frame" x="16" y="541" width="568" height="44"/>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentPickerOptions:" destination="Fmd-xy-jFl" eventType="touchUpInside" id="Gj2-Xf-iNl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K9O-wl-TeO" firstAttribute="leading" secondItem="SQS-aS-Vw4" secondAttribute="leadingMargin" id="3in-nd-3Kf"/>
+                            <constraint firstItem="kZq-PV-ZcQ" firstAttribute="top" secondItem="RCY-Ps-BKs" secondAttribute="bottom" constant="94" id="58K-65-4aZ"/>
+                            <constraint firstItem="K9O-wl-TeO" firstAttribute="trailing" secondItem="SQS-aS-Vw4" secondAttribute="trailingMargin" id="6h6-01-M98"/>
+                            <constraint firstItem="RCY-Ps-BKs" firstAttribute="top" secondItem="SQS-aS-Vw4" secondAttribute="topMargin" id="IFa-aH-LL7"/>
+                            <constraint firstItem="kZq-PV-ZcQ" firstAttribute="top" secondItem="K9O-wl-TeO" secondAttribute="bottom" constant="15" id="MkP-te-w1h"/>
+                            <constraint firstItem="K9O-wl-TeO" firstAttribute="top" secondItem="RCY-Ps-BKs" secondAttribute="bottom" constant="35" id="mW2-cL-a9N"/>
+                            <constraint firstItem="RCY-Ps-BKs" firstAttribute="leading" secondItem="SQS-aS-Vw4" secondAttribute="leadingMargin" constant="-16" id="piA-Bq-HPw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RCY-Ps-BKs" secondAttribute="trailing" constant="-16" id="svc-H8-d1a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFJ-Wp-cJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Fmd-xy-jFl" customClass="ImagePicker" customModule="ExampleApp" customModuleProvider="target">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useLibrary" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="useCamera" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="controller" destination="Nev-Kt-1sw" id="5Om-Sz-Hrz"/>
+                        <outlet property="imageView" destination="RCY-Ps-BKs" id="O7O-1J-0Mv"/>
+                        <outlet property="owner" destination="Nev-Kt-1sw" id="26d-aj-uuG"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="996" y="389"/>
         </scene>
     </scenes>
     <resources>
