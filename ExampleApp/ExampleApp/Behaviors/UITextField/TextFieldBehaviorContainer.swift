@@ -22,21 +22,9 @@ class TextFieldBehaviorContainer: TextFieldBehavior {
     
     // MARK: - UITextFieldDelegate
     func textField(tf: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = behavior.textField?(tf,
-                    shouldChangeCharactersInRange: range,
-                    replacementString: string) {
-                        if !result {
-                            return result
-                        }
-                }
-            }
-        }
-        if let delegateResult = delegate?.textField?(tf, shouldChangeCharactersInRange: range, replacementString: string) {
-            return delegateResult
-        }
-        return true
+        return allBehaviorsAre(true) { $0.textField?(tf,
+            shouldChangeCharactersInRange: range,
+            replacementString: string) }
     }
 
     func textFieldDidBeginEditing(tf: UITextField) {
@@ -50,66 +38,42 @@ class TextFieldBehaviorContainer: TextFieldBehavior {
     }
     
     func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = behavior.textFieldShouldBeginEditing?(tf) {
-                    if !result { return result }
-                }
-            }
-        }
-        if let delegateResult = delegate?.textFieldShouldBeginEditing?(tf) {
-            return delegateResult
-        }
-        return true
+        return allBehaviorsAre(true) { $0.textFieldShouldBeginEditing?(tf) }
     }
-    
+
     func textFieldShouldClear(tf: UITextField) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = behavior.textFieldShouldClear?(tf) {
-                    if !result { return result }
-                }
-            }
-        }
-        if let delegateResult = delegate?.textFieldShouldClear?(tf) {
-            return delegateResult
-        }
-        return true
+        return allBehaviorsAre(true) { $0.textFieldShouldClear?(tf) }
     }
     
     func textFieldShouldEndEditing(tf: UITextField) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = behavior.textFieldShouldEndEditing?(tf) {
-                    if !result { return result }
-                }
-            }
-        }
-        if let delegateResult = delegate?.textFieldShouldEndEditing?(tf) {
-            return delegateResult
-        }
-        return true
+        return allBehaviorsAre(true) { $0.textFieldShouldEndEditing?(tf) }
     }
     
     func textFieldShouldReturn(tf: UITextField) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = behavior.textFieldShouldReturn?(tf) {
-                    if !result { return result }
-                }
-            }
-        }
-        if let delegateResult = delegate?.textFieldShouldReturn?(tf) {
-            return delegateResult
-        }
-        return true
+        return allBehaviorsAre(true) { $0.textFieldShouldReturn?(tf) }
     }
-    
+
     private func onAllBehaviors(action: (UITextFieldDelegate) -> Void) {
         if let allBehaviors = behaviors {
             for behavior in allBehaviors as [UITextFieldDelegate] {
                 action(behavior)
             }
         }
+    }
+
+    private func allBehaviorsAre(expected: Bool, function: ((UITextFieldDelegate) -> Bool?)) -> Bool {
+        if let allBehaviors = behaviors {
+            for behavior in allBehaviors as [UITextFieldDelegate] {
+                if let result = function(behavior) {
+                    if result != expected {
+                        return result
+                    }
+                }
+            }
+        }
+        if let delegate = delegate, delegateResult = function(delegate) {
+            return expected == delegateResult
+        }
+        return expected
     }
 }
