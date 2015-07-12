@@ -10,22 +10,6 @@
 		A7C819E61B520B5D00D81B86 /* ReusableBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C819E51B520B5D00D81B86 /* ReusableBehaviors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7C819EC1B520B5D00D81B86 /* ReusableBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C819E01B520B5D00D81B86 /* ReusableBehaviors.framework */; };
 		A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */; };
-		A7C81A091B520BC300D81B86 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819FD1B520BC300D81B86 /* Behavior.swift */; };
-		A7C81A0A1B520BC300D81B86 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819FD1B520BC300D81B86 /* Behavior.swift */; };
-		A7C81A0B1B520BC300D81B86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819FF1B520BC300D81B86 /* ImagePicker.swift */; };
-		A7C81A0C1B520BC300D81B86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819FF1B520BC300D81B86 /* ImagePicker.swift */; };
-		A7C81A0D1B520BC300D81B86 /* TextFieldBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A011B520BC300D81B86 /* TextFieldBehavior.swift */; };
-		A7C81A0E1B520BC300D81B86 /* TextFieldBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A011B520BC300D81B86 /* TextFieldBehavior.swift */; };
-		A7C81A0F1B520BC300D81B86 /* TextFieldBehaviorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A021B520BC300D81B86 /* TextFieldBehaviorContainer.swift */; };
-		A7C81A101B520BC300D81B86 /* TextFieldBehaviorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A021B520BC300D81B86 /* TextFieldBehaviorContainer.swift */; };
-		A7C81A111B520BC300D81B86 /* TextFieldDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A031B520BC300D81B86 /* TextFieldDoneBehavior.swift */; };
-		A7C81A121B520BC300D81B86 /* TextFieldDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A031B520BC300D81B86 /* TextFieldDoneBehavior.swift */; };
-		A7C81A131B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A041B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift */; };
-		A7C81A141B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A041B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift */; };
-		A7C81A151B520BC300D81B86 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A061B520BC300D81B86 /* IconTextField.swift */; };
-		A7C81A161B520BC300D81B86 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A061B520BC300D81B86 /* IconTextField.swift */; };
-		A7C81A171B520BC300D81B86 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A081B520BC300D81B86 /* ArrayExtensions.swift */; };
-		A7C81A181B520BC300D81B86 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A081B520BC300D81B86 /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +29,6 @@
 		A7C819EB1B520B5D00D81B86 /* ReusableBehaviorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableBehaviorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C819F11B520B5D00D81B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableBehaviorsTests.swift; sourceTree = "<group>"; };
-		A7C819FD1B520BC300D81B86 /* Behavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
-		A7C819FF1B520BC300D81B86 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		A7C81A011B520BC300D81B86 /* TextFieldBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBehavior.swift; sourceTree = "<group>"; };
-		A7C81A021B520BC300D81B86 /* TextFieldBehaviorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBehaviorContainer.swift; sourceTree = "<group>"; };
-		A7C81A031B520BC300D81B86 /* TextFieldDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDoneBehavior.swift; sourceTree = "<group>"; };
-		A7C81A041B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengthBehavior.swift; sourceTree = "<group>"; };
-		A7C81A061B520BC300D81B86 /* IconTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
-		A7C81A081B520BC300D81B86 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +71,6 @@
 		A7C819E21B520B5D00D81B86 /* ReusableBehaviors */ = {
 			isa = PBXGroup;
 			children = (
-				A7C819FC1B520BC300D81B86 /* Behaviors */,
-				A7C81A051B520BC300D81B86 /* Custom Views */,
-				A7C81A071B520BC300D81B86 /* Extensions */,
 				A7C819E51B520B5D00D81B86 /* ReusableBehaviors.h */,
 				A7C819E31B520B5D00D81B86 /* Supporting Files */,
 			);
@@ -127,51 +100,6 @@
 				A7C819F11B520B5D00D81B86 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A7C819FC1B520BC300D81B86 /* Behaviors */ = {
-			isa = PBXGroup;
-			children = (
-				A7C819FD1B520BC300D81B86 /* Behavior.swift */,
-				A7C819FE1B520BC300D81B86 /* ImagePicking */,
-				A7C81A001B520BC300D81B86 /* UITextField */,
-			);
-			path = Behaviors;
-			sourceTree = "<group>";
-		};
-		A7C819FE1B520BC300D81B86 /* ImagePicking */ = {
-			isa = PBXGroup;
-			children = (
-				A7C819FF1B520BC300D81B86 /* ImagePicker.swift */,
-			);
-			path = ImagePicking;
-			sourceTree = "<group>";
-		};
-		A7C81A001B520BC300D81B86 /* UITextField */ = {
-			isa = PBXGroup;
-			children = (
-				A7C81A011B520BC300D81B86 /* TextFieldBehavior.swift */,
-				A7C81A021B520BC300D81B86 /* TextFieldBehaviorContainer.swift */,
-				A7C81A031B520BC300D81B86 /* TextFieldDoneBehavior.swift */,
-				A7C81A041B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift */,
-			);
-			path = UITextField;
-			sourceTree = "<group>";
-		};
-		A7C81A051B520BC300D81B86 /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				A7C81A061B520BC300D81B86 /* IconTextField.swift */,
-			);
-			path = "Custom Views";
-			sourceTree = "<group>";
-		};
-		A7C81A071B520BC300D81B86 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A7C81A081B520BC300D81B86 /* ArrayExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,14 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7C81A111B520BC300D81B86 /* TextFieldDoneBehavior.swift in Sources */,
-				A7C81A091B520BC300D81B86 /* Behavior.swift in Sources */,
-				A7C81A0B1B520BC300D81B86 /* ImagePicker.swift in Sources */,
-				A7C81A0F1B520BC300D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
-				A7C81A131B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */,
-				A7C81A0D1B520BC300D81B86 /* TextFieldBehavior.swift in Sources */,
-				A7C81A151B520BC300D81B86 /* IconTextField.swift in Sources */,
-				A7C81A171B520BC300D81B86 /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,15 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7C81A161B520BC300D81B86 /* IconTextField.swift in Sources */,
-				A7C81A0C1B520BC300D81B86 /* ImagePicker.swift in Sources */,
-				A7C81A101B520BC300D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
-				A7C81A121B520BC300D81B86 /* TextFieldDoneBehavior.swift in Sources */,
-				A7C81A0A1B520BC300D81B86 /* Behavior.swift in Sources */,
-				A7C81A0E1B520BC300D81B86 /* TextFieldBehavior.swift in Sources */,
-				A7C81A181B520BC300D81B86 /* ArrayExtensions.swift in Sources */,
-				A7C81A141B520BC300D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
