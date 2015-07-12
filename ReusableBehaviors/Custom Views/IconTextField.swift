@@ -18,7 +18,7 @@ private let textLeftOffsetFromIcon: CGFloat = 12
     private var iconImageView: UIImageView?
     
     // MARK: - Overrides
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         if let icon = icon {
             let y = bounds.midY - (icon.size.height / 2)
             let imageFrame = CGRect(origin: CGPoint(x: iconLeftMarginSize, y: y), size: icon.size)
@@ -32,7 +32,7 @@ private let textLeftOffsetFromIcon: CGFloat = 12
         }
     }
 
-    override func textRectForBounds(bounds: CGRect) -> CGRect {
+    override public func textRectForBounds(bounds: CGRect) -> CGRect {
         if let iconImageView = self.iconImageView {
             let xPos = iconImageView.frame.maxX + textLeftOffsetFromIcon
             return CGRect(x: xPos, y: 0, width: bounds.width - textLeftOffsetFromIcon, height: bounds.height)
@@ -40,7 +40,7 @@ private let textLeftOffsetFromIcon: CGFloat = 12
         return super.textRectForBounds(bounds)
     }
     
-    override func editingRectForBounds(bounds: CGRect) -> CGRect {
+    override public func editingRectForBounds(bounds: CGRect) -> CGRect {
         return textRectForBounds(bounds)
     }
 }
