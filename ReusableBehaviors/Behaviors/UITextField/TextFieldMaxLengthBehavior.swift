@@ -9,9 +9,9 @@
 import UIKit
 
 public class TextFieldMaxLengthBehavior: TextFieldBehavior {
-    @IBInspectable var maxLength: Int = 0
+    @IBInspectable public var maxLength: Int = 0
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if maxLength == 0 { return true }
         let oldLength = count(textField.text)
         let replacementLength = count(string)
