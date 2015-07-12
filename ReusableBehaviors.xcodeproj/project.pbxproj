@@ -20,6 +20,7 @@
 		A7C81A2D1B520CDD00D81B86 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A251B520CDD00D81B86 /* ArrayExtensions.swift */; };
 		A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A431B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift */; };
 		A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A451B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift */; };
+		A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A481B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A7C81A251B520CDD00D81B86 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		A7C81A431B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDoneBehaviorTests.swift; sourceTree = "<group>"; };
 		A7C81A451B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldMaxLengthBehaviorTests.swift; sourceTree = "<group>"; };
+		A7C81A481B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBehaviorContainerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C81A431B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift */,
+				A7C81A481B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift */,
 				A7C81A451B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift */,
 			);
 			path = UITextField;
@@ -313,6 +316,7 @@
 				A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
 				A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */,
+				A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
