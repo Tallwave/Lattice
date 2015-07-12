@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFieldMaxLengthBehavior: TextFieldBehavior {
+public class TextFieldMaxLengthBehavior: TextFieldBehavior {
     @IBInspectable var maxLength: Int = 0
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {

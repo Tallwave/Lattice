@@ -13,6 +13,8 @@
 		A7BF39DC1B4EFE7800381D72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BF39DB1B4EFE7800381D72 /* Images.xcassets */; };
 		A7BF39DF1B4EFE7800381D72 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BF39DD1B4EFE7800381D72 /* LaunchScreen.xib */; };
 		A7BF39EB1B4EFE7800381D72 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */; };
+		A7C81A3B1B52188900D81B86 /* ReusableBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C81A361B5217FD00D81B86 /* ReusableBehaviors.framework */; };
+		A7C81A3C1B52188900D81B86 /* ReusableBehaviors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7C81A361B5217FD00D81B86 /* ReusableBehaviors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,49 @@
 			remoteGlobalIDString = A7BF39CE1B4EFE7800381D72;
 			remoteInfo = ExampleApp;
 		};
+		A7C81A351B5217FD00D81B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7C819E01B520B5D00D81B86;
+			remoteInfo = ReusableBehaviors;
+		};
+		A7C81A371B5217FD00D81B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7C819EB1B520B5D00D81B86;
+			remoteInfo = ReusableBehaviorsTests;
+		};
+		A7C81A391B52182100D81B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C819DF1B520B5D00D81B86;
+			remoteInfo = ReusableBehaviors;
+		};
+		A7C81A3D1B52188900D81B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C819DF1B520B5D00D81B86;
+			remoteInfo = ReusableBehaviors;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7C81A3F1B52188900D81B86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7C81A3C1B52188900D81B86 /* ReusableBehaviors.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A7BF39CF1B4EFE7800381D72 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +80,7 @@
 		A7BF39E41B4EFE7800381D72 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BF39E91B4EFE7800381D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
+		A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReusableBehaviors.xcodeproj; path = ../ReusableBehaviors.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C81A3B1B52188900D81B86 /* ReusableBehaviors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +108,7 @@
 				A7BF39D11B4EFE7800381D72 /* ExampleApp */,
 				A7BF39E71B4EFE7800381D72 /* ExampleAppTests */,
 				A7BF39D01B4EFE7800381D72 /* Products */,
+				A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +159,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A7C81A311B5217FD00D81B86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7C81A361B5217FD00D81B86 /* ReusableBehaviors.framework */,
+				A7C81A381B5217FD00D81B86 /* ReusableBehaviorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +178,13 @@
 				A7BF39CB1B4EFE7800381D72 /* Sources */,
 				A7BF39CC1B4EFE7800381D72 /* Frameworks */,
 				A7BF39CD1B4EFE7800381D72 /* Resources */,
+				A7C81A3F1B52188900D81B86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A7C81A3A1B52182100D81B86 /* PBXTargetDependency */,
+				A7C81A3E1B52188900D81B86 /* PBXTargetDependency */,
 			);
 			name = ExampleApp;
 			productName = ExampleApp;
@@ -179,6 +238,12 @@
 			mainGroup = A7BF39C61B4EFE7800381D72;
 			productRefGroup = A7BF39D01B4EFE7800381D72 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A7C81A311B5217FD00D81B86 /* Products */;
+					ProjectRef = A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A7BF39CE1B4EFE7800381D72 /* ExampleApp */,
@@ -186,6 +251,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A7C81A361B5217FD00D81B86 /* ReusableBehaviors.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReusableBehaviors.framework;
+			remoteRef = A7C81A351B5217FD00D81B86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A7C81A381B5217FD00D81B86 /* ReusableBehaviorsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReusableBehaviorsTests.xctest;
+			remoteRef = A7C81A371B5217FD00D81B86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A7BF39CD1B4EFE7800381D72 /* Resources */ = {
@@ -232,6 +314,16 @@
 			isa = PBXTargetDependency;
 			target = A7BF39CE1B4EFE7800381D72 /* ExampleApp */;
 			targetProxy = A7BF39E51B4EFE7800381D72 /* PBXContainerItemProxy */;
+		};
+		A7C81A3A1B52182100D81B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReusableBehaviors;
+			targetProxy = A7C81A391B52182100D81B86 /* PBXContainerItemProxy */;
+		};
+		A7C81A3E1B52188900D81B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReusableBehaviors;
+			targetProxy = A7C81A3D1B52188900D81B86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -291,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/swilliams/code/ReusableBehaviors/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ExampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/swilliams/code/ReusableBehaviors/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = ExampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
