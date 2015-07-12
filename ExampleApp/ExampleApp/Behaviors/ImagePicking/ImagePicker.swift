@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImagePicker: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBInspectable var useLibrary: Bool = true
     @IBInspectable var useCamera: Bool = true
 
