@@ -9,13 +9,13 @@
 import UIKit
 
 public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    @IBInspectable var useLibrary: Bool = true
-    @IBInspectable var useCamera: Bool = true
+    @IBInspectable public var useLibrary: Bool = true
+    @IBInspectable public var useCamera: Bool = true
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var controller: UIViewController!
+    @IBOutlet weak public var imageView: UIImageView!
+    @IBOutlet weak public var controller: UIViewController!
 
-    @IBAction func presentPickerOptions(sender: AnyObject) {
+    @IBAction public func presentPickerOptions(sender: AnyObject) {
         let sheet = UIAlertController(title: nil,
             message: nil,
             preferredStyle: .ActionSheet)

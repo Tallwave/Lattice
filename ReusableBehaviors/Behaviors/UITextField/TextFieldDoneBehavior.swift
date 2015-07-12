@@ -9,7 +9,7 @@
 import UIKit
 
 public class TextFieldDoneBehavior: TextFieldBehavior {
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return false
     }

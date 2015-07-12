@@ -18,38 +18,38 @@ public class TextFieldBehaviorContainer: TextFieldBehavior {
         }
     }
     
-    @IBOutlet var behaviors: [TextFieldBehavior]!
+    @IBOutlet public var behaviors: [TextFieldBehavior]!
     
     // MARK: - UITextFieldDelegate
-    func textField(tf: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    public func textField(tf: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         return allBehaviorsAre(true) { $0.textField?(tf,
             shouldChangeCharactersInRange: range,
             replacementString: string) }
     }
 
-    func textFieldDidBeginEditing(tf: UITextField) {
+    public func textFieldDidBeginEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidBeginEditing?(tf) }
         delegate?.textFieldDidBeginEditing?(tf)
     }
     
-    func textFieldDidEndEditing(tf: UITextField) {
+    public func textFieldDidEndEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidEndEditing?(tf) }
         delegate?.textFieldDidEndEditing?(tf)
     }
     
-    func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
+    public func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldBeginEditing?(tf) }
     }
 
-    func textFieldShouldClear(tf: UITextField) -> Bool {
+    public func textFieldShouldClear(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldClear?(tf) }
     }
     
-    func textFieldShouldEndEditing(tf: UITextField) -> Bool {
+    public func textFieldShouldEndEditing(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldEndEditing?(tf) }
     }
     
-    func textFieldShouldReturn(tf: UITextField) -> Bool {
+    public func textFieldShouldReturn(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldReturn?(tf) }
     }
 
