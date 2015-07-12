@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFieldBehaviorContainer: TextFieldBehavior {
+public class TextFieldBehaviorContainer: TextFieldBehavior {
     // Allow bubbling up of delegate methods to the owner.
     @IBOutlet weak var delegate: UITextFieldDelegate?
     

@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ">
                                 <rect key="frame" x="16" y="69" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m56-f3-IUu"/>
@@ -34,7 +34,7 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ExampleApp" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq">
                                 <rect key="frame" x="16" y="126" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
@@ -77,22 +77,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="rw6-Cv-z4g" customClass="TextFieldBehaviorContainer" customModule="ExampleApp" customModuleProvider="target">
-                    <connections>
-                        <outlet property="owner" destination="BYZ-38-t0r" id="Yde-FR-r8X"/>
-                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="ZV9-tH-IId"/>
-                        <outletCollection property="behaviors" destination="NZ3-n1-8ES" collectionClass="NSMutableArray" id="fLc-vS-cZG"/>
-                        <outletCollection property="behaviors" destination="nm6-VU-7nL" collectionClass="NSMutableArray" id="SxI-ld-naa"/>
-                    </connections>
-                </customObject>
-                <customObject id="NZ3-n1-8ES" customClass="TextFieldDoneBehavior" customModule="ExampleApp" customModuleProvider="target"/>
-                <customObject id="nm6-VU-7nL" customClass="TextFieldMaxLengthBehavior" customModule="ExampleApp" customModuleProvider="target">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
-                            <integer key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </customObject>
             </objects>
         </scene>
         <!--View Controller-->
@@ -116,9 +100,6 @@
                                 <state key="normal" title="Choose Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="presentPickerOptions:" destination="vYc-f1-qzv" eventType="touchUpInside" id="Q7y-CP-ubB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,16 +116,6 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFJ-Wp-cJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="vYc-f1-qzv" customClass="ImagePickerBehavior" customModule="ExampleApp" customModuleProvider="target">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="useCamera" value="NO"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="controller" destination="Nev-Kt-1sw" id="Wj4-oS-uzX"/>
-                        <outlet property="imageView" destination="RCY-Ps-BKs" id="qgg-Ur-eRk"/>
-                        <outlet property="owner" destination="Nev-Kt-1sw" id="65c-Dw-Ccj"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="996" y="389"/>
         </scene>

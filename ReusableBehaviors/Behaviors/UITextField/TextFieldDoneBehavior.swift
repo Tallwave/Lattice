@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFieldDoneBehavior: TextFieldBehavior {
+public class TextFieldDoneBehavior: TextFieldBehavior {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return false

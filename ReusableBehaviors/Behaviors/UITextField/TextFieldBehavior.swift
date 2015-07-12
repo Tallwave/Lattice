@@ -8,5 +8,5 @@
 
 import UIKit
 
-class TextFieldBehavior: Behavior, UITextFieldDelegate {
+public class TextFieldBehavior: Behavior, UITextFieldDelegate {
 }

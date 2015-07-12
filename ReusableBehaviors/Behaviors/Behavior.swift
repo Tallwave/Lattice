@@ -9,7 +9,7 @@
 import UIKit
 
 // Must extend from NSObject because subclasses require NSObjectProtocol.
-class Behavior: NSObject {
+public class Behavior: NSObject {
 
     // MARK: - Lifetime Management
     
