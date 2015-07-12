@@ -53,7 +53,7 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
 
     // MARK: - ImagePickerDelegate
     //- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+    public func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         imageView.image = image
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
