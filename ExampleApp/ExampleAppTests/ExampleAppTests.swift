@@ -3,7 +3,7 @@
 //  ExampleAppTests
 //
 //  Created by Scott Williams on 7/9/15.
-//  Copyright (c) 2015 Scott Williams. All rights reserved.
+//  Copyright (c) 2015 Tallwave. All rights reserved.
 //
 
 import UIKit
