@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode6.4
-xcode_project: ReusableBehaviors.xcodeproj
+xcode_workspace: ReusableBehaviors.xcworkspace
 xcode_scheme: ReusableBehaviors
