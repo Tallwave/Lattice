@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode6.4
 xcode_workspace: ReusableBehaviors.xcworkspace
 xcode_scheme: ReusableBehaviors
-xcode_sdk: iphonesimulator8.0
+xcode_sdk: iphonesimulator8.4
