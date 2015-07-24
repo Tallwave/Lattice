@@ -17,11 +17,10 @@ public class UITextViewDoneBehavior: Behavior {
     }
     
     private func createAccessoryView() -> UIView {
-        let frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 44)
-        let menu = UIToolbar(frame: frame)
+        let toolbar = AccessoryBar()
         let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "doneTapped:")
-        menu.items = [doneButton]
-        return menu
+        toolbar.items = [doneButton]
+        return toolbar
     }
     
     func doneTapped(sender: AnyObject) {
