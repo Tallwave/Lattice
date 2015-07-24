@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */; };
+		A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */; };
 		A7C819E61B520B5D00D81B86 /* ReusableBehaviors.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C819E51B520B5D00D81B86 /* ReusableBehaviors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7C819EC1B520B5D00D81B86 /* ReusableBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C819E01B520B5D00D81B86 /* ReusableBehaviors.framework */; };
 		A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDoneBehavior.swift; sourceTree = "<group>"; };
 		A7C819E01B520B5D00D81B86 /* ReusableBehaviors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableBehaviors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C819E41B520B5D00D81B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7C819E51B520B5D00D81B86 /* ReusableBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableBehaviors.h; sourceTree = "<group>"; };
@@ -72,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7C2DF471B62AE1800A3757E /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		A7C819D61B520B5D00D81B86 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +142,7 @@
 		A7C81A191B520CDD00D81B86 /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
+				A7C2DF471B62AE1800A3757E /* UITextView */,
 				A7C81A1A1B520CDD00D81B86 /* Behavior.swift */,
 				A7C81A1B1B520CDD00D81B86 /* ImagePicking */,
 				A7C81A1D1B520CDD00D81B86 /* UITextField */,
@@ -298,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
@@ -314,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */,
+				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
 				A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */,
 				A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */,
