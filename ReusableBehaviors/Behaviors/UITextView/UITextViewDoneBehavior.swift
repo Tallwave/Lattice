@@ -8,19 +8,10 @@
 
 import UIKit
 
-public class UITextViewDoneBehavior: Behavior {
-    
-    @IBOutlet public weak var textview: UITextView? {
-        didSet {
-            textview?.inputAccessoryView = createAccessoryView()
-        }
-    }
-    
-    private func createAccessoryView() -> UIView {
-        let toolbar = AccessoryBar()
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "doneTapped:")
-        toolbar.items = [doneButton]
-        return toolbar
+public class UITextViewDoneBehavior: InputAccessoryBehavior {
+
+    override func createToolbarButtons() -> [UIBarButtonItem] {
+        return [UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "doneTapped:")]
     }
     
     func doneTapped(sender: AnyObject) {
