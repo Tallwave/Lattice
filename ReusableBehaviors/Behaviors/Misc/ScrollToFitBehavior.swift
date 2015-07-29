@@ -12,6 +12,7 @@ public class ScrollToFitBehavior: Behavior {
     private var originalConstraintValue: CGFloat?
 
     @IBOutlet public weak var constraintToModify: NSLayoutConstraint?
+    @IBOutlet public weak var containingView: UIView?
     @IBOutlet public var textControls: [UIView]!
 
     override init() {
@@ -57,15 +58,20 @@ public class ScrollToFitBehavior: Behavior {
             originalConstraintValue = constraintToModify?.constant
         }
 
+        constraintToModify?.constant += distance
+        containingView?.setNeedsUpdateConstraints()
         UIView.animateWithDuration(duration) {
-            self.constraintToModify?.constant += distance
+            self.containingView?.layoutIfNeeded()
         }
     }
 
     private func resetDistance(overDuration duration: NSTimeInterval) {
-        if let originalConstraintValue = self.originalConstraintValue {
+        if let originalConstraintValue = self.originalConstraintValue,
+            containingView = self.containingView {
+                constraintToModify?.constant = originalConstraintValue
+                containingView.setNeedsUpdateConstraints()
             UIView.animateWithDuration(duration) {
-                self.constraintToModify?.constant = originalConstraintValue
+                containingView.layoutIfNeeded()
             }
         }
     }
