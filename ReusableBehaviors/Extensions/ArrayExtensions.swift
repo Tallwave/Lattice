@@ -9,6 +9,9 @@
 import UIKit
 
 extension Array {
+    /**
+    True if every element within the array is true for `fn`.
+    */
     func all(fn: (T) -> Bool) -> Bool {
         for obj in self {
             if !fn(obj) {

@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    Displays a Done button on a `UIToolbar` serving as an `inputAccessView` on the `UITextView`.
+*/
 public class UITextViewDoneBehavior: InputAccessoryBehavior {
 
     override func createToolbarButtons() -> [UIBarButtonItem] {

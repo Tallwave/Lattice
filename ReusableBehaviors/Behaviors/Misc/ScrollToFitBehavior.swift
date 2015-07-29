@@ -8,11 +8,21 @@
 
 import UIKit
 
+/**
+    When the onscreen keyboard overlaps a control, slide the screen up to bring the control back into frame.
+    
+    This works by modifying the top most constraint (defined here).
+*/
 public class ScrollToFitBehavior: Behavior {
     private var originalConstraintValue: CGFloat?
 
     @IBOutlet public weak var constraintToModify: NSLayoutConstraint?
     @IBOutlet public weak var containingView: UIView?
+    /**
+        `UIView` is the first common ancestor for both `UITextField` and `UITextView`. When the keyboard is shown (via `UIKeyboardWillShowNotification`) the class will scan this array to see if any of its views are `firstResponder`, than act accordingly. 
+    
+        Considering a `willSet` accessor to screen for just text views, but there may be other cases where allowing a generic `UIView` in is required.
+    */
     @IBOutlet public var textControls: [UIView]!
 
     override init() {

@@ -8,5 +8,8 @@
 
 import UIKit
 
+/**
+An empty class to allow for `TextFieldBehaviorContainer`'s `behaviors` property to contain both `Behavior` and `UITextFieldDelegate`.
+*/
 public class TextFieldBehavior: Behavior, UITextFieldDelegate {
 }

@@ -10,9 +10,13 @@ import UIKit
 
 private let standardToolbarHeight: CGFloat = 44
 
+/**
+A Toolbar that is displayed above a keyboard as an inputAccessoryView.
+*/
 class AccessoryBar: UIToolbar {
     
     init() {
+        // TODO: will this work when the screen is rotated?
         let frame = CGRect(x: 0, y: 0, width: Util.screenWidth, height: standardToolbarHeight)
         super.init(frame: frame)
     }
