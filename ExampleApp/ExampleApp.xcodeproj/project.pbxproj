@@ -80,6 +80,7 @@
 		A7BF39E41B4EFE7800381D72 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BF39E91B4EFE7800381D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BF39EA1B4EFE7800381D72 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
+		A7C2DF4B1B62AFDA00A3757E /* ExampleAppPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExampleAppPlayground.playground; sourceTree = "<group>"; };
 		A7C81A301B5217FD00D81B86 /* ReusableBehaviors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReusableBehaviors.xcodeproj; path = ../ReusableBehaviors.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A7BF39E91B4EFE7800381D72 /* Info.plist */,
+				A7C2DF4B1B62AFDA00A3757E /* ExampleAppPlayground.playground */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
