@@ -8,12 +8,21 @@
 
 import UIKit
 
+/**
+    Buttons can be left or right aligned.
+*/
 public enum ToolbarButtonAlignment {
     case Left, Right
 }
 
+/**
+    Display an array of buttons above the keyboard for a `UITextView`.
+*/
 public class InputAccessoryBehavior: Behavior {
 
+    /**
+    Buttons can be left or right aligned.
+    */
     @IBInspectable var buttonAlignment: ToolbarButtonAlignment = .Right
 
     @IBOutlet public weak var textview: UITextView? {
@@ -22,6 +31,9 @@ public class InputAccessoryBehavior: Behavior {
         }
     }
 
+    /**
+    The buttons to display. This is expected to be implemented by subclasses.
+    */
     func createToolbarButtons() -> [UIBarButtonItem] {
         return []
     }

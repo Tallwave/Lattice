@@ -8,11 +8,25 @@
 
 import UIKit
 
+/**
+    Tap a button, display a sheet to pick a source, then user an ImagePicker to display an image in a UIImageView.
+*/
 public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    /**
+        Which sources to pick from.
+    
+        TODO: 
+            * Implement a "Last Image Created" button
+            * If only one picker is enabled, don't display the sheet
+    */
     @IBInspectable public var useLibrary: Bool = true
     @IBInspectable public var useCamera: Bool = true
 
     @IBOutlet weak public var imageView: UIImageView!
+    
+    /**
+        Likely the same as the `owner`, but could be different. Needed to have an origin to display the UIImagePickerController.
+    */
     @IBOutlet weak public var controller: UIViewController!
 
     @IBAction public func presentPickerOptions(sender: AnyObject) {

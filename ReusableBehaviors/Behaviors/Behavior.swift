@@ -8,12 +8,18 @@
 
 import UIKit
 
-// Must extend from NSObject because subclasses require NSObjectProtocol.
+/**
+    A "Behavior" is a single piece of logic encapsulated into a class that can be applied to a view or other object, usually through Interface Builder.
+
+    Must extend from NSObject because subclasses require NSObjectProtocol.
+*/
 public class Behavior: NSObject {
 
     // MARK: - Lifetime Management
     
-    // Which object this Behavior is bound to. Uses Objective C Runtime magic to make the lifetime of this behavior match its owner's.
+    /** 
+        Which object this Behavior is bound to. Uses Objective C Runtime magic to make the lifetime of this behavior match its owner's.
+    */
     @IBOutlet weak var owner: NSObject? {
         willSet {
             if let oldOwner = owner {

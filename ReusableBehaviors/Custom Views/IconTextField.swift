@@ -11,6 +11,9 @@ import UIKit
 private let iconLeftMarginSize:     CGFloat = 8
 private let textLeftOffsetFromIcon: CGFloat = 12
 
+/**
+Embeds an icon (as a `UIImageView`) in a `UITextField`. The icon is left-aligned.
+*/
 @IBDesignable public class IconTextField: UITextField {
 
     @IBInspectable var icon: UIImage?

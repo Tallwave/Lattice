@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    When the Done button is pushed on the keyboard, the keyboard is removed.
+*/
 public class TextFieldDoneBehavior: TextFieldBehavior {
     public func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
