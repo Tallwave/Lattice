@@ -17,8 +17,14 @@ public class ScrollToFitBehavior: Behavior {
 
     override init() {
         super.init()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "keyboardWillShow:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "keyboardWillHide:",
+            name: UIKeyboardWillHideNotification,
+            object: nil)
     }
 
     deinit {
@@ -67,9 +73,9 @@ public class ScrollToFitBehavior: Behavior {
 
     private func resetDistance(overDuration duration: NSTimeInterval) {
         if let originalConstraintValue = self.originalConstraintValue,
-            containingView = self.containingView {
-                constraintToModify?.constant = originalConstraintValue
-                containingView.setNeedsUpdateConstraints()
+        containingView = self.containingView {
+            constraintToModify?.constant = originalConstraintValue
+            containingView.setNeedsUpdateConstraints()
             UIView.animateWithDuration(duration) {
                 containingView.layoutIfNeeded()
             }
