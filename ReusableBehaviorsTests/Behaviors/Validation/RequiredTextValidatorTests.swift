@@ -54,7 +54,7 @@ class RequiredTextValidatorTests: XCTestCase {
     
     func testValidateIsTrueForEmptyTextWhenAcceptingEmptyText() {
         textfield.text = "   "
-        validator.acceptBlankText = true
+        validator.trimEndsOfText = false
         XCTAssertTrue(validator.validate())
     }
     
