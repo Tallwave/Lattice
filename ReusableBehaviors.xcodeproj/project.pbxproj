@@ -24,6 +24,14 @@
 		A76112C51B72967900C637A8 /* PostValidationSegueAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112C31B72967900C637A8 /* PostValidationSegueAction.swift */; };
 		A76112C71B72970600C637A8 /* PostValidationFailureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112C61B72970600C637A8 /* PostValidationFailureAction.swift */; };
 		A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112C61B72970600C637A8 /* PostValidationFailureAction.swift */; };
+		A76112CA1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */; };
+		A76112CB1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */; };
+		A76112CD1B729E7500C637A8 /* TextControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112CC1B729E7500C637A8 /* TextControlValidator.swift */; };
+		A76112CE1B729E7500C637A8 /* TextControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112CC1B729E7500C637A8 /* TextControlValidator.swift */; };
+		A76112D01B729F5500C637A8 /* MinLengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112CF1B729F5500C637A8 /* MinLengthValidatorTests.swift */; };
+		A76112D21B729FE700C637A8 /* MaxLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */; };
+		A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */; };
+		A76112D51B72A01500C637A8 /* MaxLengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -75,6 +83,11 @@
 		A76112C01B72959F00C637A8 /* PostValidationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostValidationAction.swift; sourceTree = "<group>"; };
 		A76112C31B72967900C637A8 /* PostValidationSegueAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostValidationSegueAction.swift; sourceTree = "<group>"; };
 		A76112C61B72970600C637A8 /* PostValidationFailureAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostValidationFailureAction.swift; sourceTree = "<group>"; };
+		A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthValidator.swift; sourceTree = "<group>"; };
+		A76112CC1B729E7500C637A8 /* TextControlValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextControlValidator.swift; sourceTree = "<group>"; };
+		A76112CF1B729F5500C637A8 /* MinLengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthValidatorTests.swift; sourceTree = "<group>"; };
+		A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthValidator.swift; sourceTree = "<group>"; };
+		A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthValidatorTests.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -124,14 +137,17 @@
 		A71930E81B71132F00211FD5 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
-				A71930E91B71144800211FD5 /* ValidatorContainer.swift */,
-				A71930EC1B71154A00211FD5 /* Validator.swift */,
-				A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */,
 				A76112BD1B72950F00C637A8 /* PostValidationTransitioner.swift */,
 				A76112C01B72959F00C637A8 /* PostValidationAction.swift */,
 				A76112C31B72967900C637A8 /* PostValidationSegueAction.swift */,
 				A76112C61B72970600C637A8 /* PostValidationFailureAction.swift */,
+				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
+				A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */,
+				A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */,
+				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
+				A71930E91B71144800211FD5 /* ValidatorContainer.swift */,
+				A71930EC1B71154A00211FD5 /* Validator.swift */,
+				A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -140,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */,
+				A76112CF1B729F5500C637A8 /* MinLengthValidatorTests.swift */,
+				A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -402,11 +420,13 @@
 				A76112BE1B72950F00C637A8 /* PostValidationTransitioner.swift in Sources */,
 				A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */,
 				A76112C71B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
+				A76112CA1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
+				A76112CD1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
 				A7E909791B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A7C81A2B1B520CDD00D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */,
 				A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
@@ -418,6 +438,7 @@
 				A76112C11B72959F00C637A8 /* PostValidationAction.swift in Sources */,
 				A7C81A2D1B520CDD00D81B86 /* ArrayExtensions.swift in Sources */,
 				A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */,
+				A76112D21B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +451,7 @@
 				A7C2DF4F1B62B33E00A3757E /* AccessoryBar.swift in Sources */,
 				A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */,
 				A71930EE1B71154A00211FD5 /* Validator.swift in Sources */,
+				A76112D01B729F5500C637A8 /* MinLengthValidatorTests.swift in Sources */,
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
 				A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
@@ -438,15 +460,19 @@
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A76112BF1B72950F00C637A8 /* PostValidationTransitioner.swift in Sources */,
 				A76112B91B72670A00C637A8 /* BehaviorControl.swift in Sources */,
+				A76112D51B72A01500C637A8 /* MaxLengthValidatorTests.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
 				A76112B61B72633500C637A8 /* Behavior.swift in Sources */,
 				A7C2DF521B62B39300A3757E /* Util.swift in Sources */,
 				A76112C21B72959F00C637A8 /* PostValidationAction.swift in Sources */,
+				A76112CE1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
 				A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */,
 				A78057311B725E2000CD5187 /* StringExtensions.swift in Sources */,
 				A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */,
+				A76112CB1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */,
 				A7E9097A1B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
+				A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
