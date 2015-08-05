@@ -8,16 +8,21 @@
 
 import UIKit
 
-public class ScreenValidator: UIControl {
+public class ScreenValidator: BehaviorControl {
     @IBOutlet public var validators: [Validator]?
+    
+    public private(set) var failingValidators: [Validator] = []
 
     @IBAction public func validate(sender: AnyObject) {
         if let invalidResults = validators?.filter({ !$0.validate() }) {
-            sendInvalidResults(invalidResults)
+            sendResults(invalidResults)
+        } else {
+            sendResults([])
         }
     }
     
-    private func sendInvalidResults(invalidResults: [Validator]) {
+    private func sendResults(invalidResults: [Validator]) {
+        failingValidators = invalidResults
         sendActionsForControlEvents(.ValueChanged)
     }
 }
