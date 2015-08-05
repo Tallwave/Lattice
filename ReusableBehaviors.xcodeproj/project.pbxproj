@@ -41,6 +41,9 @@
 		A76112E41B72B92800C637A8 /* NumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E31B72B92800C637A8 /* NumberValidator.swift */; };
 		A76112E51B72B92800C637A8 /* NumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E31B72B92800C637A8 /* NumberValidator.swift */; };
 		A76112E71B72BDC300C637A8 /* NumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E61B72BDC300C637A8 /* NumberValidatorTests.swift */; };
+		A76112E91B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
+		A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
+		A76112EC1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -103,6 +106,8 @@
 		A76112E11B72A3FA00C637A8 /* EmailTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextValidatorTests.swift; sourceTree = "<group>"; };
 		A76112E31B72B92800C637A8 /* NumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberValidator.swift; sourceTree = "<group>"; };
 		A76112E61B72BDC300C637A8 /* NumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberValidatorTests.swift; sourceTree = "<group>"; };
+		A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthAmericanPhoneNumberValidator.swift; sourceTree = "<group>"; };
+		A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAPhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 				A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */,
 				A76112DE1B72A33C00C637A8 /* EmailTextValidator.swift */,
 				A76112E31B72B92800C637A8 /* NumberValidator.swift */,
+				A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */,
 				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
 			);
@@ -190,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */,
+				A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */,
 				A76112E61B72BDC300C637A8 /* NumberValidatorTests.swift */,
 				A76112E11B72A3FA00C637A8 /* EmailTextValidatorTests.swift */,
 				A76112DC1B72A26000C637A8 /* RegexValidatorTests.swift */,
@@ -450,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76112E91B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */,
 				A76112BB1B727CE500C637A8 /* ValidationReceiver.swift in Sources */,
 				A7C2DF511B62B39300A3757E /* Util.swift in Sources */,
 				A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
@@ -501,6 +509,7 @@
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A76112BF1B72950F00C637A8 /* PostValidationTransitioner.swift in Sources */,
 				A76112E01B72A33C00C637A8 /* EmailTextValidator.swift in Sources */,
+				A76112EC1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift in Sources */,
 				A76112B91B72670A00C637A8 /* BehaviorControl.swift in Sources */,
 				A76112DB1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
 				A76112D51B72A01500C637A8 /* MaxLengthValidatorTests.swift in Sources */,
@@ -518,6 +527,7 @@
 				A76112E21B72A3FA00C637A8 /* EmailTextValidatorTests.swift in Sources */,
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
+				A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */,
 				A76112E51B72B92800C637A8 /* NumberValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
