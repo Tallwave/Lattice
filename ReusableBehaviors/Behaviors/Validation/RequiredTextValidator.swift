@@ -11,7 +11,7 @@ import UIKit
 public class RequiredTextValidator: Validator {
     @IBInspectable var trimText: Bool = true
     
-    override func validate() -> Bool {
+    override public func validate() -> Bool {
         if let textfield = view as? UITextField {
             return validateTextField(textfield)
         } else if let textview = view as? UITextView {

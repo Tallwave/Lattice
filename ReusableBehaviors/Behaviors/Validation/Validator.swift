@@ -13,7 +13,7 @@ public class Validator: NSObject {
     @IBOutlet weak var view: UIView!
     @IBInspectable var errorMessage: String = ""
     
-    func validate() -> Bool {
+    public func validate() -> Bool {
         return true
     }
 }

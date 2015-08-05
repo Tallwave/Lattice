@@ -20,11 +20,8 @@ public class ValidatorContainer: BehaviorControl {
     }
 
     @IBAction public func validate(sender: AnyObject) {
-        if let invalidResults = validators?.filter({ !$0.validate() }) {
-            sendResults(invalidResults)
-        } else {
-            sendResults([])
-        }
+        let invalidResults = validators?.filter({ !$0.validate() })
+        sendResults(invalidResults ?? [])
     }
     
     private func sendResults(invalidResults: [Validator]) {

@@ -17,6 +17,6 @@ public class PostValidationAction: Behavior {
     /**
     Runs an action with the associated validators. Not implemented on the base class.
     */
-    func performAction(forValidators validators: [Validator]?) {
+    public func performAction(forValidators validators: [Validator]?) {
     }
 }

@@ -30,6 +30,11 @@ public class PostValidationTransitioner: Behavior, ValidationReceiver {
         }
     }
     
+    // MARK: - Implementations
+    
+    // These are private because you should customize by subclassing 
+    // `PostValidationAction` and setting it here.
+    
     private func success() {
         if let handler = successAction {
             handler.performAction(forValidators: nil)
