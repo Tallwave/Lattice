@@ -32,6 +32,9 @@
 		A76112D21B729FE700C637A8 /* MaxLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */; };
 		A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */; };
 		A76112D51B72A01500C637A8 /* MaxLengthValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */; };
+		A76112DA1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */; };
+		A76112DB1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */; };
+		A76112DD1B72A26000C637A8 /* RegexValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112DC1B72A26000C637A8 /* RegexValidatorTests.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -88,6 +91,8 @@
 		A76112CF1B729F5500C637A8 /* MinLengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthValidatorTests.swift; sourceTree = "<group>"; };
 		A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthValidator.swift; sourceTree = "<group>"; };
 		A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthValidatorTests.swift; sourceTree = "<group>"; };
+		A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionValidator.swift; sourceTree = "<group>"; };
+		A76112DC1B72A26000C637A8 /* RegexValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexValidatorTests.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -160,9 +165,10 @@
 		A76112D81B72A0C900C637A8 /* Text Validators */ = {
 			isa = PBXGroup;
 			children = (
-				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */,
 				A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */,
+				A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */,
+				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
 			);
 			name = "Text Validators";
@@ -172,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */,
+				A76112DC1B72A26000C637A8 /* RegexValidatorTests.swift */,
 				A76112CF1B729F5500C637A8 /* MinLengthValidatorTests.swift */,
 				A76112D41B72A01500C637A8 /* MaxLengthValidatorTests.swift */,
 			);
@@ -440,6 +447,7 @@
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
+				A76112DA1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
 				A76112CD1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
@@ -469,6 +477,7 @@
 				A71930EE1B71154A00211FD5 /* Validator.swift in Sources */,
 				A76112D01B729F5500C637A8 /* MinLengthValidatorTests.swift in Sources */,
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
+				A76112DD1B72A26000C637A8 /* RegexValidatorTests.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
 				A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
 				A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
@@ -476,6 +485,7 @@
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A76112BF1B72950F00C637A8 /* PostValidationTransitioner.swift in Sources */,
 				A76112B91B72670A00C637A8 /* BehaviorControl.swift in Sources */,
+				A76112DB1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
 				A76112D51B72A01500C637A8 /* MaxLengthValidatorTests.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
 				A76112B61B72633500C637A8 /* Behavior.swift in Sources */,
