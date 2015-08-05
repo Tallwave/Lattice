@@ -180,12 +180,12 @@
 		A76112D81B72A0C900C637A8 /* Text Validators */ = {
 			isa = PBXGroup;
 			children = (
+				A76112DE1B72A33C00C637A8 /* EmailTextValidator.swift */,
 				A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */,
 				A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */,
-				A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */,
-				A76112DE1B72A33C00C637A8 /* EmailTextValidator.swift */,
-				A76112E31B72B92800C637A8 /* NumberValidator.swift */,
 				A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */,
+				A76112E31B72B92800C637A8 /* NumberValidator.swift */,
+				A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */,
 				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
 			);
