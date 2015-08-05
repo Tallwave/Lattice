@@ -52,6 +52,12 @@ class RequiredTextValidatorTests: XCTestCase {
         XCTAssertTrue(validator.validate())
     }
     
+    func testValidateIsTrueForEmptyTextWhenAcceptingEmptyText() {
+        textfield.text = "   "
+        validator.acceptBlankText = true
+        XCTAssertTrue(validator.validate())
+    }
+    
     func testValidateIsTrueForTextView() {
         validator.view = textview
         textview.text = "hi"

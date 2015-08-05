@@ -8,8 +8,14 @@
 
 import UIKit
 
+/**
+    Makes sure that a text control has text in it. Works on either a `UITextField` or `UITextView`.
+*/
 public class RequiredTextValidator: Validator {
-    @IBInspectable var trimText: Bool = true
+    /**
+    Allows for empty text to pass validation. `false` by default.
+    */
+    @IBInspectable var acceptBlankText: Bool = false
     
     override public func validate() -> Bool {
         if let textfield = view as? UITextField {
@@ -29,7 +35,7 @@ public class RequiredTextValidator: Validator {
     }
     
     private func validateText(text: String) -> Bool {
-        let textToValidate = trimText ? text.stringByTrimmingWhitespace() : text
+        let textToValidate = acceptBlankText ? text : text.stringByTrimmingWhitespace()
         return count(textToValidate) > 0
     }
 }
