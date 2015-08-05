@@ -137,19 +137,35 @@
 		A71930E81B71132F00211FD5 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				A76112D61B72A0A600C637A8 /* Post Validation */,
+				A76112D81B72A0C900C637A8 /* Text Validators */,
+				A71930E91B71144800211FD5 /* ValidatorContainer.swift */,
+				A71930EC1B71154A00211FD5 /* Validator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		A76112D61B72A0A600C637A8 /* Post Validation */ = {
+			isa = PBXGroup;
+			children = (
 				A76112BD1B72950F00C637A8 /* PostValidationTransitioner.swift */,
 				A76112C01B72959F00C637A8 /* PostValidationAction.swift */,
 				A76112C31B72967900C637A8 /* PostValidationSegueAction.swift */,
 				A76112C61B72970600C637A8 /* PostValidationFailureAction.swift */,
+				A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */,
+			);
+			name = "Post Validation";
+			sourceTree = "<group>";
+		};
+		A76112D81B72A0C900C637A8 /* Text Validators */ = {
+			isa = PBXGroup;
+			children = (
 				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112C91B729DAE00C637A8 /* MinLengthValidator.swift */,
 				A76112D11B729FE700C637A8 /* MaxLengthValidator.swift */,
 				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
-				A71930E91B71144800211FD5 /* ValidatorContainer.swift */,
-				A71930EC1B71154A00211FD5 /* Validator.swift */,
-				A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */,
 			);
-			path = Validation;
+			name = "Text Validators";
 			sourceTree = "<group>";
 		};
 		A78057321B725EAB00CD5187 /* Validation */ = {

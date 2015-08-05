@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+Base class for all Text Control validators. Accepts a `UITextField` or `UITextView`.
+*/
 public class TextControlValidator: Validator {
     public override func validate() -> Bool {
         if let textfield = view as? UITextField {

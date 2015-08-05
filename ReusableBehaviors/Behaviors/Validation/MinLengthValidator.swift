@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    Validates that a text control has a minimum text length.
+*/
 public class MinLengthValidator: TextControlValidator {
     @IBInspectable var minimumLength: Int = 0
     

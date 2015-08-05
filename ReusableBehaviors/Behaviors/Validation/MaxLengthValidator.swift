@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+Validates that a text control has a maximum text length.
+*/
 public class MaxLengthValidator: TextControlValidator {
     @IBInspectable var maximumLength: Int = 0
     
