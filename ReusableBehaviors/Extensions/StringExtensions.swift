@@ -8,6 +8,8 @@
 
 import UIKit
 
-class StringExtensions: NSObject {
-   
+extension String {
+    func stringByTrimmingWhitespace() -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    }
 }

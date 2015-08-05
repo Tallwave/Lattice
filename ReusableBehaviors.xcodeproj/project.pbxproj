@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71930EA1B71144800211FD5 /* ScreenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ScreenValidator.swift */; };
+		A71930EB1B71144800211FD5 /* ScreenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ScreenValidator.swift */; };
+		A71930ED1B71154A00211FD5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930EC1B71154A00211FD5 /* Validator.swift */; };
+		A71930EE1B71154A00211FD5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930EC1B71154A00211FD5 /* Validator.swift */; };
+		A76112B61B72633500C637A8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1A1B520CDD00D81B86 /* Behavior.swift */; };
+		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
+		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
+		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
+		A78057311B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
+		A78057341B725EF600CD5187 /* RequiredTextValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */; };
 		A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */; };
@@ -45,6 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A71930E91B71144800211FD5 /* ScreenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenValidator.swift; sourceTree = "<group>"; };
+		A71930EC1B71154A00211FD5 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = ReusableBehaviors/Behaviors/Validation/Validator.swift; sourceTree = SOURCE_ROOT; };
+		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
+		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
 		A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAccessoryBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDoneBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF4D1B62B33E00A3757E /* AccessoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryBar.swift; sourceTree = "<group>"; };
@@ -88,6 +103,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A71930E81B71132F00211FD5 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				A71930EC1B71154A00211FD5 /* Validator.swift */,
+				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
+				A71930E91B71144800211FD5 /* ScreenValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		A78057321B725EAB00CD5187 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		A7C2DF471B62AE1800A3757E /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +195,7 @@
 				A7E909771B6873DD0092F45A /* Misc */,
 				A7C81A1D1B520CDD00D81B86 /* UITextField */,
 				A7C2DF471B62AE1800A3757E /* UITextView */,
+				A71930E81B71132F00211FD5 /* Validation */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -198,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C81A251B520CDD00D81B86 /* ArrayExtensions.swift */,
+				A780572F1B725E2000CD5187 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +240,7 @@
 		A7C81A411B521F8400D81B86 /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
+				A78057321B725EAB00CD5187 /* Validation */,
 				A7C81A421B521FA200D81B86 /* UITextField */,
 			);
 			path = Behaviors;
@@ -337,8 +373,11 @@
 			files = (
 				A7C2DF511B62B39300A3757E /* Util.swift in Sources */,
 				A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
+				A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
 				A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
+				A71930EA1B71144800211FD5 /* ScreenValidator.swift in Sources */,
+				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
 				A7E909791B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
@@ -348,6 +387,7 @@
 				A7C81A281B520CDD00D81B86 /* TextFieldBehavior.swift in Sources */,
 				A7C81A2C1B520CDD00D81B86 /* IconTextField.swift in Sources */,
 				A7C81A2D1B520CDD00D81B86 /* ArrayExtensions.swift in Sources */,
+				A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,16 +395,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78057341B725EF600CD5187 /* RequiredTextValidatorTests.swift in Sources */,
 				A7C2DF4F1B62B33E00A3757E /* AccessoryBar.swift in Sources */,
 				A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */,
+				A71930EE1B71154A00211FD5 /* Validator.swift in Sources */,
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
+				A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
+				A76112B61B72633500C637A8 /* Behavior.swift in Sources */,
 				A7C2DF521B62B39300A3757E /* Util.swift in Sources */,
 				A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */,
+				A78057311B725E2000CD5187 /* StringExtensions.swift in Sources */,
 				A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */,
 				A7E9097A1B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
+				A71930EB1B71144800211FD5 /* ScreenValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
