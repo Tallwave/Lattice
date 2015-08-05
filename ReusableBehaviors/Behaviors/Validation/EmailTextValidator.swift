@@ -10,7 +10,7 @@ import UIKit
 
 public class EmailTextValidator: RegularExpressionValidator {
     private let _pattern = "^\\S+@\\S+\\.\\S+$"
-    @IBInspectable override var pattern: String {
+    override var pattern: String {
         get { return _pattern }
         set {}
     }
