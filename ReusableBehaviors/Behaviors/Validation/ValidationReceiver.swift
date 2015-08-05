@@ -10,12 +10,12 @@ import UIKit
 
 public protocol ValidationReceiver {
     func validationUpdated(sender: ValidatorContainer)
-    var successHandler: ValidationAction? { get set }
+    var successAction: ValidationAction? { get set }
     
 }
 
-public class ValidationReceiverTransition: NSObject, ValidationReceiver {
-    @IBOutlet public weak var successHandler: ValidationAction?
+public class ValidationReceiverTransition: Behavior, ValidationReceiver {
+    @IBOutlet public weak var successAction: ValidationAction?
     
     @IBAction public func validationUpdated(sender: ValidatorContainer) {
         if sender.isValid {
@@ -26,25 +26,26 @@ public class ValidationReceiverTransition: NSObject, ValidationReceiver {
     }
     
     private func success() {
-        if let handler = successHandler {
+        if let handler = successAction {
             handler.performAction(forValidators: nil)
         }
     }
     
     private func failure() {
-        
+        println("FAILURE")
     }
 }
 
-@objc public protocol ValidationAction {
-    func performAction(forValidators validators: [Validator]?)
+public class ValidationAction: Behavior {
+    func performAction(forValidators validators: [Validator]?) {
+    }
 }
 
 public class SegueTransitioner: ValidationAction {
     @IBInspectable var segueIdentifier: String?
     @IBOutlet weak var controller: UIViewController!
     
-    @objc public func performAction(forValidators validators: [Validator]? = nil) {
+    public override func performAction(forValidators validators: [Validator]? = nil) {
         if let segueIdentifier = self.segueIdentifier, controller = self.controller {
             controller.performSegueWithIdentifier(segueIdentifier, sender: nil)
         }

@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A71930EA1B71144800211FD5 /* ScreenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ScreenValidator.swift */; };
-		A71930EB1B71144800211FD5 /* ScreenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ScreenValidator.swift */; };
+		A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ValidatorContainer.swift */; };
+		A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ValidatorContainer.swift */; };
 		A71930ED1B71154A00211FD5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930EC1B71154A00211FD5 /* Validator.swift */; };
 		A71930EE1B71154A00211FD5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930EC1B71154A00211FD5 /* Validator.swift */; };
 		A76112B61B72633500C637A8 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1A1B520CDD00D81B86 /* Behavior.swift */; };
 		A76112B81B72670A00C637A8 /* BehaviorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112B71B72670A00C637A8 /* BehaviorControl.swift */; };
 		A76112B91B72670A00C637A8 /* BehaviorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112B71B72670A00C637A8 /* BehaviorControl.swift */; };
+		A76112BB1B727CE500C637A8 /* ValidationReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */; };
+		A76112BC1B727CE500C637A8 /* ValidationReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -57,9 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A71930E91B71144800211FD5 /* ScreenValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenValidator.swift; sourceTree = "<group>"; };
+		A71930E91B71144800211FD5 /* ValidatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorContainer.swift; sourceTree = "<group>"; };
 		A71930EC1B71154A00211FD5 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = ReusableBehaviors/Behaviors/Validation/Validator.swift; sourceTree = SOURCE_ROOT; };
 		A76112B71B72670A00C637A8 /* BehaviorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorControl.swift; sourceTree = "<group>"; };
+		A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationReceiver.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -109,9 +112,10 @@
 		A71930E81B71132F00211FD5 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				A71930EC1B71154A00211FD5 /* Validator.swift */,
 				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
-				A71930E91B71144800211FD5 /* ScreenValidator.swift */,
+				A71930E91B71144800211FD5 /* ValidatorContainer.swift */,
+				A71930EC1B71154A00211FD5 /* Validator.swift */,
+				A76112BA1B727CE500C637A8 /* ValidationReceiver.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -375,12 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76112BB1B727CE500C637A8 /* ValidationReceiver.swift in Sources */,
 				A7C2DF511B62B39300A3757E /* Util.swift in Sources */,
 				A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
 				A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
-				A71930EA1B71144800211FD5 /* ScreenValidator.swift in Sources */,
+				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
@@ -407,6 +412,7 @@
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
 				A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
+				A76112BC1B727CE500C637A8 /* ValidationReceiver.swift in Sources */,
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A76112B91B72670A00C637A8 /* BehaviorControl.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
@@ -416,7 +422,7 @@
 				A78057311B725E2000CD5187 /* StringExtensions.swift in Sources */,
 				A7C81A491B522AFE00D81B86 /* TextFieldBehaviorContainerTests.swift in Sources */,
 				A7E9097A1B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
-				A71930EB1B71144800211FD5 /* ScreenValidator.swift in Sources */,
+				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
