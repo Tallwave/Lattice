@@ -2,5 +2,8 @@
 
 import UIKit
 
-var s: NSString = NSString(string: "hi")
+let s = NSMutableString()
+NSMatchingOptions.WithoutAnchoringBounds
+NSRegularExpressionOptions.AnchorsMatchLines
+
 

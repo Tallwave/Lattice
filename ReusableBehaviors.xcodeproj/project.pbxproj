@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A798E40D1B69D3F4000E26FA /* StringMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* StringMask.swift */; };
+		A798E40E1B69D3F4000E26FA /* StringMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* StringMask.swift */; };
 		A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A798E40C1B69D3F4000E26FA /* StringMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMask.swift; sourceTree = "<group>"; };
 		A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAccessoryBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDoneBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF4D1B62B33E00A3757E /* AccessoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryBar.swift; sourceTree = "<group>"; };
@@ -198,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C81A251B520CDD00D81B86 /* ArrayExtensions.swift */,
+				A798E40C1B69D3F4000E26FA /* StringMask.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +347,7 @@
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
 				A7E909791B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A7C81A2B1B520CDD00D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */,
+				A798E40D1B69D3F4000E26FA /* StringMask.swift in Sources */,
 				A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A7C2DF4E1B62B33E00A3757E /* AccessoryBar.swift in Sources */,
 				A7C81A281B520CDD00D81B86 /* TextFieldBehavior.swift in Sources */,
@@ -359,6 +364,7 @@
 				A7C81A461B5223CD00D81B86 /* TextFieldMaxLengthBehaviorTests.swift in Sources */,
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
+				A798E40E1B69D3F4000E26FA /* StringMask.swift in Sources */,
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */,
 				A7C2DF521B62B39300A3757E /* Util.swift in Sources */,
