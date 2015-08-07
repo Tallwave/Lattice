@@ -9,7 +9,8 @@ A collection of Behaviors for iOS that'll allow for slim and clean View Controll
 1. ~~Right now this is just a sample project. Move all the useful classes out to into a library.~~
 2. ~~Tests! Also add something like CircleCI.~~ Using [Travis](https://travis-ci.org/Tallwave/ReusableBehaviors)
 3. Add more (a lot more) behaviors.
-4. Release as a Cocoapod.
+4. Rename
+5. Release as a Cocoapod.
 
 # Contribution
 1. Fork this project.
