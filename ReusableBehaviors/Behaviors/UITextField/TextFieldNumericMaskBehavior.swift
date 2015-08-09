@@ -8,8 +8,11 @@
 
 import UIKit
 
+/**
+Wraps the `NumberMasker` class into a Behavior. 
+*/
 public class TextFieldNumericMaskBehavior: TextFieldBehavior {
-    @IBInspectable  public var pattern: String = ""
+    @IBInspectable public var pattern: String = ""
     private let masker = NumberMasker()
 
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
