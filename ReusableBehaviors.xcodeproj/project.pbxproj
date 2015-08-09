@@ -45,6 +45,8 @@
 		A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
 		A76112EC1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */; };
 		A77351C21B76C26D003AF4FF /* NumberMaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */; };
+		A77351D71B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
+		A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -112,6 +114,7 @@
 		A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthAmericanPhoneNumberValidator.swift; sourceTree = "<group>"; };
 		A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAPhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
 		A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMaskTests.swift; sourceTree = "<group>"; };
+		A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNumericMaskBehavior.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -315,6 +318,7 @@
 				A7C81A1F1B520CDD00D81B86 /* TextFieldBehaviorContainer.swift */,
 				A7C81A201B520CDD00D81B86 /* TextFieldDoneBehavior.swift */,
 				A7C81A211B520CDD00D81B86 /* TextFieldMaxLengthBehavior.swift */,
+				A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -481,6 +485,7 @@
 				A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */,
 				A76112DF1B72A33C00C637A8 /* EmailTextValidator.swift in Sources */,
 				A76112C71B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
+				A77351D71B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */,
 				A76112CA1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
@@ -517,6 +522,7 @@
 				A71930EE1B71154A00211FD5 /* Validator.swift in Sources */,
 				A76112D01B729F5500C637A8 /* MinLengthValidatorTests.swift in Sources */,
 				A7C2DF4A1B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */,
+				A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */,
 				A76112DD1B72A26000C637A8 /* RegexValidatorTests.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
 				A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
