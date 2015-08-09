@@ -14,9 +14,14 @@ import UIKit
 /**
 Masks a numeric string according to a pattern defined.
 
-The pattern should resemble a string of #'s with the punctuation and spacing at appropriate positions. For example a phone number's pattern would look like `(###) ###-####`.
+The pattern should resemble a string of #'s with the punctuation and spacing at 
+appropriate positions. For example a phone number's pattern would look like 
+`(###) ###-####`.
 
-The masker will skip over any characters that are not numbers. If a string is shorter than the pattern, it will be masked to the pattern for as much as it can. For example, `12345` masked against the phone number mask will be `(123) 45`.
+The masker will skip over any characters that are not numbers. If a string is 
+shorter than the pattern, it will be masked to the pattern for as much as it 
+can. For example, `12345` masked against the phone number mask will be 
+`(123) 45`.
 */
 struct NumberMasker {
     func mask(string: String, withPattern pattern: String) -> String {
