@@ -12,4 +12,9 @@ extension String {
     func stringByTrimmingWhitespace() -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     }
+
+    func isDigit() -> Bool {
+        let components = self.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet())
+        return components.filter({ !$0.isEmpty }).count == 0
+    }
 }
