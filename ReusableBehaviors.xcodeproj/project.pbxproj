@@ -44,13 +44,14 @@
 		A76112E91B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
 		A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
 		A76112EC1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */; };
+		A77351C21B76C26D003AF4FF /* NumberMaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
-		A798E40D1B69D3F4000E26FA /* StringMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* StringMask.swift */; };
-		A798E40E1B69D3F4000E26FA /* StringMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* StringMask.swift */; };
 		A78057311B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
 		A78057341B725EF600CD5187 /* RequiredTextValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */; };
+		A798E40D1B69D3F4000E26FA /* NumberMasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* NumberMasker.swift */; };
+		A798E40E1B69D3F4000E26FA /* NumberMasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798E40C1B69D3F4000E26FA /* NumberMasker.swift */; };
 		A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */; };
 		A7C2DF491B62AE4C00A3757E /* UITextViewDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */; };
@@ -110,10 +111,11 @@
 		A76112E61B72BDC300C637A8 /* NumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberValidatorTests.swift; sourceTree = "<group>"; };
 		A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthAmericanPhoneNumberValidator.swift; sourceTree = "<group>"; };
 		A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAPhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
+		A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMaskTests.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		A798E40C1B69D3F4000E26FA /* StringMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMask.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
+		A798E40C1B69D3F4000E26FA /* NumberMasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMasker.swift; sourceTree = "<group>"; };
 		A799679C1B64371400D36046 /* InputAccessoryBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAccessoryBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF481B62AE4C00A3757E /* UITextViewDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDoneBehavior.swift; sourceTree = "<group>"; };
 		A7C2DF4D1B62B33E00A3757E /* AccessoryBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryBar.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			name = "Text Validators";
 			sourceTree = "<group>";
 		};
+		A77351C01B76C24E003AF4FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A78057321B725EAB00CD5187 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		A7C819EF1B520B5D00D81B86 /* ReusableBehaviorsTests */ = {
 			isa = PBXGroup;
 			children = (
+				A77351C01B76C24E003AF4FF /* Extensions */,
 				A7C81A411B521F8400D81B86 /* Behaviors */,
 				A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */,
 				A7C819F01B520B5D00D81B86 /* Supporting Files */,
@@ -321,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C81A251B520CDD00D81B86 /* ArrayExtensions.swift */,
-				A798E40C1B69D3F4000E26FA /* StringMask.swift */,
+				A798E40C1B69D3F4000E26FA /* NumberMasker.swift */,
 				A780572F1B725E2000CD5187 /* StringExtensions.swift */,
 			);
 			path = Extensions;
@@ -480,7 +491,7 @@
 				A76112CD1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
 				A7E909791B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A7C81A2B1B520CDD00D81B86 /* TextFieldMaxLengthBehavior.swift in Sources */,
-				A798E40D1B69D3F4000E26FA /* StringMask.swift in Sources */,
+				A798E40D1B69D3F4000E26FA /* NumberMasker.swift in Sources */,
 				A76112E41B72B92800C637A8 /* NumberValidator.swift in Sources */,
 				A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A7C2DF4E1B62B33E00A3757E /* AccessoryBar.swift in Sources */,
@@ -510,7 +521,7 @@
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
 				A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
 				A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
-				A798E40E1B69D3F4000E26FA /* StringMask.swift in Sources */,
+				A798E40E1B69D3F4000E26FA /* NumberMasker.swift in Sources */,
 				A76112BC1B727CE500C637A8 /* ValidationReceiver.swift in Sources */,
 				A799679E1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A76112BF1B72950F00C637A8 /* PostValidationTransitioner.swift in Sources */,
@@ -534,6 +545,7 @@
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 				A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */,
+				A77351C21B76C26D003AF4FF /* NumberMaskTests.swift in Sources */,
 				A76112E51B72B92800C637A8 /* NumberValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
