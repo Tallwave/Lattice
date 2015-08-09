@@ -47,6 +47,8 @@
 		A77351C21B76C26D003AF4FF /* NumberMaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */; };
 		A77351D71B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
 		A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
+		A77351DA1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */; };
+		A77351DB1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -117,6 +119,7 @@
 		A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAPhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
 		A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMaskTests.swift; sourceTree = "<group>"; };
 		A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNumericMaskBehavior.swift; sourceTree = "<group>"; };
+		A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastPhotoRetriever.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -310,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C81A1C1B520CDD00D81B86 /* ImagePicker.swift */,
+				A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */,
 			);
 			path = ImagePicking;
 			sourceTree = "<group>";
@@ -495,6 +499,7 @@
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
+				A77351DA1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */,
 				A76112DA1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
 				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
@@ -545,6 +550,7 @@
 				A76112B61B72633500C637A8 /* Behavior.swift in Sources */,
 				A7C2DF521B62B39300A3757E /* Util.swift in Sources */,
 				A76112C21B72959F00C637A8 /* PostValidationAction.swift in Sources */,
+				A77351DB1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */,
 				A76112CE1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
 				A7C81A441B521FCE00D81B86 /* TextFieldDoneBehaviorTests.swift in Sources */,
 				A7A5EFB91B73FD5900599F2A /* NextFieldBehavior.swift in Sources */,
