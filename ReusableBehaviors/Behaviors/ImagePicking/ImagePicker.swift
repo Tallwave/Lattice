@@ -21,6 +21,7 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
     */
     @IBInspectable public var useLibrary: Bool = true
     @IBInspectable public var useCamera: Bool = true
+    @IBInspectable public var useLastPhoto: Bool = true
 
     @IBOutlet weak public var imageView: UIImageView!
     
@@ -33,6 +34,13 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
         let sheet = UIAlertController(title: nil,
             message: nil,
             preferredStyle: .ActionSheet)
+        if useLastPhoto {
+            let lastPhotoAction = UIAlertAction(title: "Last Photo Taken...", style: .Default) { action in
+                sheet.dismissViewControllerAnimated(true, completion: nil)
+                self.retrieveLastPhoto()
+            }
+            sheet.addAction(lastPhotoAction)
+        }
         if useCamera {
             let cameraAction = UIAlertAction(title: "Take Photo...", style: .Default) { action in
                 sheet.dismissViewControllerAnimated(true, completion: nil)
@@ -67,6 +75,13 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
         picker.sourceType = .Camera
         picker.delegate = self
         controller.presentViewController(picker, animated: true, completion: nil)
+    }
+
+    private func retrieveLastPhoto() {
+        let lastPhotoRetriever = LastPhotoRetriever()
+        lastPhotoRetriever.queryLastPhoto(toFitInImageView: imageView) { img in
+            self.imageView.image = img
+        }
     }
 
     // MARK: - ImagePickerDelegate
