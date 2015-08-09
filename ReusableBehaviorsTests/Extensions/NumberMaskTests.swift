@@ -26,9 +26,14 @@ class NumberMaskTests: XCTestCase {
         XCTAssertEqual("123-45", result, "Expected 123-45, got \(result)")
     }
 
-    func testMaskWithDifferentLengths() {
+    func testMaskWithShortString() {
         let result = masker.mask("123", withPattern: "###-##")
         XCTAssertEqual("123", result)
+    }
+
+    func testMaskWithLongString() {
+        let result = masker.mask("12345678", withPattern: "###-##")
+        XCTAssertEqual("123-45", result)
     }
 
     func testMaskWithNonNumericString() {
