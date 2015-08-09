@@ -35,7 +35,8 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
             preferredStyle: .ActionSheet)
         if useCamera {
             let cameraAction = UIAlertAction(title: "Take Photo...", style: .Default) { action in
-                //
+                sheet.dismissViewControllerAnimated(true, completion: nil)
+                self.presentCamera()
             }
             sheet.addAction(cameraAction)
         }
@@ -62,7 +63,10 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
     }
 
     private func presentCamera() {
-
+        let picker = UIImagePickerController()
+        picker.sourceType = .Camera
+        picker.delegate = self
+        controller.presentViewController(picker, animated: true, completion: nil)
     }
 
     // MARK: - ImagePickerDelegate
@@ -71,5 +75,4 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
         imageView.image = image
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
-
 }
