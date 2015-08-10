@@ -249,12 +249,12 @@ a {
 #lattice-logo {
   display: block;
   height: 534px;
-  background-image: url("/assets/lattice.png"); 
+  background-image: url("../assets/Lattice.png"); 
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 120dpi) {
   #lattice-logo {
-    background-image: url("/assets/lattice@2x.png");
+    background-image: url("../assets/Lattice@2x.png");
     background-size: 886px 534px; 
   } 
 }
