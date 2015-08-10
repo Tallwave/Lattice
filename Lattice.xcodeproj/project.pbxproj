@@ -54,6 +54,8 @@
 		A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
 		A77351DA1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */; };
 		A77351DB1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */; };
+		A775F9081B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775F9071B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift */; };
+		A775F9091B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A775F9071B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift */; };
 		A780572D1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */; };
 		A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780572F1B725E2000CD5187 /* StringExtensions.swift */; };
@@ -126,6 +128,7 @@
 		A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMaskTests.swift; sourceTree = "<group>"; };
 		A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNumericMaskBehavior.swift; sourceTree = "<group>"; };
 		A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastPhotoRetriever.swift; sourceTree = "<group>"; };
+		A775F9071B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCreditCardMaskBehavior.swift; sourceTree = "<group>"; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -333,6 +336,7 @@
 				A7C81A201B520CDD00D81B86 /* TextFieldDoneBehavior.swift */,
 				A7C81A211B520CDD00D81B86 /* TextFieldMaxLengthBehavior.swift */,
 				A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */,
+				A775F9071B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -519,6 +523,7 @@
 				A76113271B78F64F00C637A8 /* ImageReceiver.swift in Sources */,
 				A76112B81B72670A00C637A8 /* BehaviorControl.swift in Sources */,
 				A7C81A281B520CDD00D81B86 /* TextFieldBehavior.swift in Sources */,
+				A775F9081B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift in Sources */,
 				A7C81A2C1B520CDD00D81B86 /* IconTextField.swift in Sources */,
 				A76112C41B72967900C637A8 /* PostValidationSegueAction.swift in Sources */,
 				A76112C11B72959F00C637A8 /* PostValidationAction.swift in Sources */,
@@ -568,6 +573,7 @@
 				A7E9097A1B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A76112E71B72BDC300C637A8 /* NumberValidatorTests.swift in Sources */,
 				A761132C1B78FC4400C637A8 /* ImagePickerBehavior.swift in Sources */,
+				A775F9091B7961C500CFBBE4 /* TextFieldCreditCardMaskBehavior.swift in Sources */,
 				A76112E21B72A3FA00C637A8 /* EmailTextValidatorTests.swift in Sources */,
 				A76113281B78F64F00C637A8 /* ImageReceiver.swift in Sources */,
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,

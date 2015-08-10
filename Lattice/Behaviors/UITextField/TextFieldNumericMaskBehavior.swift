@@ -13,7 +13,7 @@ Wraps the `NumberMasker` class into a Behavior.
 */
 public class TextFieldNumericMaskBehavior: TextFieldBehavior {
     @IBInspectable public var pattern: String = ""
-    private let masker = NumberMasker()
+    let masker = NumberMasker()
 
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 
@@ -22,7 +22,7 @@ public class TextFieldNumericMaskBehavior: TextFieldBehavior {
 
         let oldString = textField.text as NSString
         let text = oldString.stringByReplacingCharactersInRange(range, withString: string)
-        textField.text = masker.mask(text, withPattern: pattern)
+        textField.text = mask(text)
 
         var diff = count(textField.text) - oldString.length
         if diff < 0 { diff = 0 }
@@ -30,5 +30,9 @@ public class TextFieldNumericMaskBehavior: TextFieldBehavior {
         let newSelectedRange = textField.textRangeFromPosition(newCursorPosition, toPosition: newCursorPosition)
         textField.selectedTextRange = newSelectedRange
         return false
+    }
+    
+    public func mask(text: String) -> String {
+        return masker.mask(text, withPattern: pattern)
     }
 }
