@@ -44,6 +44,10 @@
 		A76112E91B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
 		A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */; };
 		A76112EC1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */; };
+		A76113271B78F64F00C637A8 /* ImageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76113261B78F64F00C637A8 /* ImageReceiver.swift */; };
+		A76113281B78F64F00C637A8 /* ImageReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76113261B78F64F00C637A8 /* ImageReceiver.swift */; };
+		A761132A1B78F8AD00C637A8 /* StandardImagePickerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76113291B78F8AD00C637A8 /* StandardImagePickerBehavior.swift */; };
+		A761132B1B78F8AD00C637A8 /* StandardImagePickerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76113291B78F8AD00C637A8 /* StandardImagePickerBehavior.swift */; };
 		A77351C21B76C26D003AF4FF /* NumberMaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */; };
 		A77351D71B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
 		A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */; };
@@ -71,7 +75,7 @@
 		A7C819EC1B520B5D00D81B86 /* ReusableBehaviors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C819E01B520B5D00D81B86 /* ReusableBehaviors.framework */; };
 		A7C819F31B520B5D00D81B86 /* ReusableBehaviorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */; };
 		A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1A1B520CDD00D81B86 /* Behavior.swift */; };
-		A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1C1B520CDD00D81B86 /* ImagePicker.swift */; };
+		A7C81A271B520CDD00D81B86 /* ImagePickerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1C1B520CDD00D81B86 /* ImagePickerBehavior.swift */; };
 		A7C81A281B520CDD00D81B86 /* TextFieldBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1E1B520CDD00D81B86 /* TextFieldBehavior.swift */; };
 		A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A1F1B520CDD00D81B86 /* TextFieldBehaviorContainer.swift */; };
 		A7C81A2A1B520CDD00D81B86 /* TextFieldDoneBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C81A201B520CDD00D81B86 /* TextFieldDoneBehavior.swift */; };
@@ -117,6 +121,8 @@
 		A76112E61B72BDC300C637A8 /* NumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberValidatorTests.swift; sourceTree = "<group>"; };
 		A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorthAmericanPhoneNumberValidator.swift; sourceTree = "<group>"; };
 		A76112EB1B72C29A00C637A8 /* NAPhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAPhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
+		A76113261B78F64F00C637A8 /* ImageReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageReceiver.swift; sourceTree = "<group>"; };
+		A76113291B78F8AD00C637A8 /* StandardImagePickerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardImagePickerBehavior.swift; sourceTree = "<group>"; };
 		A77351C11B76C26D003AF4FF /* NumberMaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberMaskTests.swift; sourceTree = "<group>"; };
 		A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNumericMaskBehavior.swift; sourceTree = "<group>"; };
 		A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastPhotoRetriever.swift; sourceTree = "<group>"; };
@@ -136,7 +142,7 @@
 		A7C819F11B520B5D00D81B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7C819F21B520B5D00D81B86 /* ReusableBehaviorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableBehaviorsTests.swift; sourceTree = "<group>"; };
 		A7C81A1A1B520CDD00D81B86 /* Behavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
-		A7C81A1C1B520CDD00D81B86 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A7C81A1C1B520CDD00D81B86 /* ImagePickerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerBehavior.swift; sourceTree = "<group>"; };
 		A7C81A1E1B520CDD00D81B86 /* TextFieldBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBehavior.swift; sourceTree = "<group>"; };
 		A7C81A1F1B520CDD00D81B86 /* TextFieldBehaviorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBehaviorContainer.swift; sourceTree = "<group>"; };
 		A7C81A201B520CDD00D81B86 /* TextFieldDoneBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDoneBehavior.swift; sourceTree = "<group>"; };
@@ -312,8 +318,10 @@
 		A7C81A1B1B520CDD00D81B86 /* ImagePicking */ = {
 			isa = PBXGroup;
 			children = (
-				A7C81A1C1B520CDD00D81B86 /* ImagePicker.swift */,
+				A7C81A1C1B520CDD00D81B86 /* ImagePickerBehavior.swift */,
+				A76113291B78F8AD00C637A8 /* StandardImagePickerBehavior.swift */,
 				A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */,
+				A76113261B78F64F00C637A8 /* ImageReceiver.swift */,
 			);
 			path = ImagePicking;
 			sourceTree = "<group>";
@@ -501,7 +509,7 @@
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
 				A77351DA1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */,
 				A76112DA1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
-				A7C81A271B520CDD00D81B86 /* ImagePicker.swift in Sources */,
+				A7C81A271B520CDD00D81B86 /* ImagePickerBehavior.swift in Sources */,
 				A7C81A291B520CDD00D81B86 /* TextFieldBehaviorContainer.swift in Sources */,
 				A76112CD1B729E7500C637A8 /* TextControlValidator.swift in Sources */,
 				A7E909791B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
@@ -510,6 +518,7 @@
 				A76112E41B72B92800C637A8 /* NumberValidator.swift in Sources */,
 				A799679D1B64371400D36046 /* InputAccessoryBehavior.swift in Sources */,
 				A7C2DF4E1B62B33E00A3757E /* AccessoryBar.swift in Sources */,
+				A76113271B78F64F00C637A8 /* ImageReceiver.swift in Sources */,
 				A76112B81B72670A00C637A8 /* BehaviorControl.swift in Sources */,
 				A7C81A281B520CDD00D81B86 /* TextFieldBehavior.swift in Sources */,
 				A7C81A2C1B520CDD00D81B86 /* IconTextField.swift in Sources */,
@@ -517,6 +526,7 @@
 				A76112C11B72959F00C637A8 /* PostValidationAction.swift in Sources */,
 				A7C81A2D1B520CDD00D81B86 /* ArrayExtensions.swift in Sources */,
 				A78057301B725E2000CD5187 /* StringExtensions.swift in Sources */,
+				A761132A1B78F8AD00C637A8 /* StandardImagePickerBehavior.swift in Sources */,
 				A76112D21B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +545,7 @@
 				A77351D81B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift in Sources */,
 				A76112DD1B72A26000C637A8 /* RegexValidatorTests.swift in Sources */,
 				A7C2DF531B62B8A300A3757E /* TextFieldBehavior.swift in Sources */,
+				A761132B1B78F8AD00C637A8 /* StandardImagePickerBehavior.swift in Sources */,
 				A76112C81B72970600C637A8 /* PostValidationFailureAction.swift in Sources */,
 				A780572E1B725CC800CD5187 /* RequiredTextValidator.swift in Sources */,
 				A798E40E1B69D3F4000E26FA /* NumberMasker.swift in Sources */,
@@ -560,6 +571,7 @@
 				A7E9097A1B6873FE0092F45A /* ScrollToFitBehavior.swift in Sources */,
 				A76112E71B72BDC300C637A8 /* NumberValidatorTests.swift in Sources */,
 				A76112E21B72A3FA00C637A8 /* EmailTextValidatorTests.swift in Sources */,
+				A76113281B78F64F00C637A8 /* ImageReceiver.swift in Sources */,
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 				A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */,
