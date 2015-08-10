@@ -19,8 +19,22 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="lattice" class="anchor" href="#lattice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lattice</h1>
+      <a id="lattice-logo" href="/"></a>
+
+      <p><em>An interlaced structure or pattern fastened together, used typically as support.</em></p>
+
+<p>A lot of iOS development is boilerplate code. How many times have you written code to restrict the length of text in a <code>UITextField</code>? How many more times do you want to do that? Yeah, me too.</p>
+
+<p>Lattice aims to extract all that code into a group of reusable classes, or &#8220;Behaviors&#8221; that can be combined to quickly provide a ton of functionality to various UI classes.</p>
+
+<p>Further, inheritance chains can get brittle. Once you get more than one or two generations in you always discover a scenario that you didn&#8217;t originally think about. You might even find yourself thinking, &#8220;Well if Swift just had multiple inheritance&#8230;&#8221;. That way leads to madness though, so Lattice favors composition over inheritance. You can combine multiple behaviors. This does mean that you can shoot yourself in the foot if you do something like adding a <code>MinLengthValidator</code> of 10 and a <code>MaxLengthValidator</code> of 5. Workaround: don&#8217;t do that.</p>
+
+<p>Here&#8217;s the good part. Each of these Behaviors is designed to be dropped into Interface Builder as plain old objects. Once you wire a couple of <code>IBOutlet</code>s up, you&#8217;re done. This means that your View Controllers are not cluttered up with dumb stuff like Validation and field operators. </p>
+
+<p>This was implemented around Storyboards. It might work with regular old Xibs, but maybe not.</p>
+
+<p>A big thank you to <a href="http://www.objc.io/issues/13-architecture/behaviors/">Krzysztof Zabłocki</a> for the idea. I ported over some of his code to Swift.</p>
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Tallwave/Lattice">Lattice</a> is maintained by <a href="https://github.com/Tallwave">Tallwave</a>.</span>

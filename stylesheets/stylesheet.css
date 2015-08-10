@@ -242,4 +242,20 @@ a {
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; 
+  } 
+}
+
+#lattice-logo {
+  display: block;
+  height: 534px;
+  background-image: url("/assets/lattice.png"); 
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 120dpi) {
+  #lattice-logo {
+    background-image: url("/assets/lattice@2x.png");
+    background-size: 886px 534px; 
+  } 
+}
+
