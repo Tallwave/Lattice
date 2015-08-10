@@ -18,7 +18,7 @@ A big thank you to [Krzysztof Zabłocki](http://www.objc.io/issues/13-architectu
 2. ~~Tests! Also add something like CircleCI.~~ Using [Travis](https://travis-ci.org/Tallwave/ReusableBehaviors)
 3. Add more (a lot more) behaviors.
    * Subclass NumberMasker for CreditCard, Phone, Time
-4. ~Rename~
+4. ~~Rename~~
 5. Release as a Cocoapod.
 
 # Contribution
