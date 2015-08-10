@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7C819DF1B520B5D00D81B86"
-               BuildableName = "ReusableBehaviors.framework"
-               BlueprintName = "ReusableBehaviors"
-               ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
+               BuildableName = "Lattice.framework"
+               BlueprintName = "Lattice"
+               ReferencedContainer = "container:Lattice.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7C819EA1B520B5D00D81B86"
-               BuildableName = "ReusableBehaviorsTests.xctest"
-               BlueprintName = "ReusableBehaviorsTests"
-               ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
+               BuildableName = "LatticeTests.xctest"
+               BlueprintName = "LatticeTests"
+               ReferencedContainer = "container:Lattice.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,21 +47,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7C819EA1B520B5D00D81B86"
-               BuildableName = "ReusableBehaviorsTests.xctest"
-               BlueprintName = "ReusableBehaviorsTests"
-               ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
+               BuildableName = "LatticeTests.xctest"
+               BlueprintName = "LatticeTests"
+               ReferencedContainer = "container:Lattice.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7C819DF1B520B5D00D81B86"
-            BuildableName = "ReusableBehaviors.framework"
-            BlueprintName = "ReusableBehaviors"
-            ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -76,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7C819DF1B520B5D00D81B86"
-            BuildableName = "ReusableBehaviors.framework"
-            BlueprintName = "ReusableBehaviors"
-            ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
+            BuildableName = "Lattice.framework"
+            BlueprintName = "Lattice"
+            ReferencedContainer = "container:Lattice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7C819DF1B520B5D00D81B86"
-            BuildableName = "ReusableBehaviors.framework"
-            BlueprintName = "ReusableBehaviors"
-            ReferencedContainer = "container:ReusableBehaviors.xcodeproj">
+            BuildableName = "Lattice.framework"
+            BlueprintName = "Lattice"
+            ReferencedContainer = "container:Lattice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
