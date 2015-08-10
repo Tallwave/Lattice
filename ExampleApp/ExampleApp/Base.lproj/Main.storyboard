@@ -31,19 +31,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_001_leaf"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="Lattice">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq">
                                 <rect key="frame" x="16" y="126" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_203_lock"/>
-                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
                                 <rect key="frame" x="16" y="178" width="568" height="44"/>
@@ -90,18 +87,10 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="5ta-NR-isT" customClass="TextFieldBehaviorContainer" customModule="Lattice">
+                <customObject id="3va-qc-hPj" customClass="TextFieldBehaviorContainer" customModule="Lattice">
                     <connections>
-                        <outlet property="owner" destination="BYZ-38-t0r" id="4eG-zX-ieG"/>
-                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="9oY-IH-hgK"/>
-                        <outletCollection property="behaviors" destination="D8A-3d-Gz7" collectionClass="NSMutableArray" id="Gh3-B3-Fd9"/>
-                    </connections>
-                </customObject>
-                <customObject id="D8A-3d-Gz7" customClass="TextFieldDoneBehavior" customModule="Lattice"/>
-                <customObject id="R50-eK-hNX" customClass="UITextViewDoneBehavior" customModule="Lattice">
-                    <connections>
-                        <outlet property="owner" destination="BYZ-38-t0r" id="CU8-CZ-yV9"/>
-                        <outlet property="textview" destination="ffF-wA-wyd" id="sKy-Yy-rD4"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="1bb-sL-WWb"/>
+                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="x2B-CC-Z96"/>
                     </connections>
                 </customObject>
             </objects>
@@ -148,7 +137,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="glyphicons_006_user_add" width="28" height="22"/>
-        <image name="glyphicons_203_lock" width="21" height="26"/>
+        <image name="glyphicons_001_leaf" width="24" height="25"/>
     </resources>
 </document>
