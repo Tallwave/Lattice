@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ReusableBehaviors.xcodeproj">
+      location = "group:/Users/swilliams/code/ReusableBehaviors/Lattice.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ExampleApp/ExampleApp.xcodeproj">
