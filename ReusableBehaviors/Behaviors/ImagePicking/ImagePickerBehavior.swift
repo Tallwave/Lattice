@@ -9,14 +9,18 @@
 import UIKit
 
 /**
-    Tap a button, display a sheet to pick a source, then user an ImagePicker to display an image in a UIImageView.
+    Wraps up the logic to pick an image. The user can use the Last Photo Taken,
+Camera, or pick from their library. The image is sent to an `ImageReceiver` to
+handle what was picked.
+
+In many cases you just want to display the image in a `UIImageView`. Use the
+`StandardImagePickerBehavior` for that to avoid creating a separate Receiver.
 */
 public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     /**
         Which sources to pick from.
     
         TODO: 
-            * Implement a "Last Image Created" button
             * If only one picker is enabled, don't display the sheet
     */
     @IBInspectable public var useLibrary: Bool = true
@@ -26,7 +30,8 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak public var imageReceiver: ImageReceiver!
     
     /**
-        Likely the same as the `owner`, but could be different. Needed to have an origin to display the UIImagePickerController.
+        Likely the same as the `owner`, but could be different. Needed to have 
+    an origin to display the UIImagePickerController.
     */
     @IBOutlet weak public var controller: UIViewController!
 
@@ -79,15 +84,19 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
 
     private func retrieveLastPhoto() {
         let lastPhotoRetriever = LastPhotoRetriever()
-        lastPhotoRetriever.fetchLastPhoto(resizeTo: nil) { [unowned self] img in
-            self.imageReceiver.handleImage(img)
+        lastPhotoRetriever.fetchLastPhoto(resizeTo: nil) { [unowned self] image in
+            self.sendImageToReceiver(image)
         }
     }
 
     // MARK: - ImagePickerDelegate
     //- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
     public func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        imageReceiver.handleImage(image)
+        sendImageToReceiver(image)
         picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    public func sendImageToReceiver(image: UIImage?) {
+        imageReceiver.handleImage(image)
     }
 }
