@@ -8,12 +8,20 @@
 
 import UIKit
 
+/**
+Popular credit cards. Smaller cards like Diners Club aren't big enough to 
+warrant including at this time.
+*/
 enum CreditCard {
     case Visa,
     MasterCard,
     Discover,
     Amex
     
+    /**
+    This is not the most accurate since credit cards can vary on more than just 
+    the first number.
+    */
     init(cardNumber: String) {
         let startIndex = cardNumber.startIndex
         let endIndex = advance(cardNumber.startIndex, 1)
@@ -37,6 +45,9 @@ enum CreditCard {
     }
 }
 
+/**
+    A NumberMasker to be used with a Credit Card input.
+*/
 public class TextFieldCreditCardMaskBehavior: TextFieldNumericMaskBehavior {
     public override func mask(text: String) -> String {
         if count(text) == 0 {
