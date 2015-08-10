@@ -9,7 +9,10 @@
 import UIKit
 
 /**
-    Handles the results of validation. The `ValidatorContainer` fires the `ValueChanged` event, which can be be tied to the `validationUpdated` action here. The transitioner has a success and failure path that are encapsulated by `PostValidationAction`s.
+    Handles the results of validation. The `ValidatorContainer` fires the 
+`ValueChanged` event, which can be be tied to the `validationUpdated` action 
+here. The transitioner has a success and failure path that are encapsulated by 
+`PostValidationAction`s.
 */
 public class PostValidationTransitioner: Behavior, ValidationReceiver {
     /**
