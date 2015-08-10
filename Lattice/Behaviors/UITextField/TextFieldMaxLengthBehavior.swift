@@ -9,7 +9,8 @@
 import UIKit
 
 /**
-    Ensures that the text of the associated `UITextField` does not exceed `maxLength`.
+    Ensures that the text of the associated `UITextField` does not exceed 
+`maxLength`.
 */
 public class TextFieldMaxLengthBehavior: TextFieldBehavior {
     @IBInspectable public var maxLength: Int = 0
