@@ -1,5 +1,5 @@
 # Lattice
-[![Build Status](https://travis-ci.org/Tallwave/ReusableBehaviors.svg)](https://travis-ci.org/Tallwave/ReusableBehaviors)
+[![Build Status](https://travis-ci.org/Tallwave/Lattice.svg)](https://travis-ci.org/Tallwave/Lattice)
 
 *An interlaced structure or pattern fastened together, used typically as support.*
 
@@ -17,7 +17,7 @@ A big thank you to [Krzysztof Zabłocki](http://www.objc.io/issues/13-architectu
 
 # Next Steps
 1. ~~Right now this is just a sample project. Move all the useful classes out to into a library.~~
-2. ~~Tests! Also add something like CircleCI.~~ Using [Travis](https://travis-ci.org/Tallwave/ReusableBehaviors)
+2. ~~Tests! Also add something like CircleCI.~~ Using [Travis](https://travis-ci.org/Tallwave/Lattice)
 3. Add more (a lot more) behaviors.
    * Subclass NumberMasker for CreditCard, Phone, Time
 4. ~~Rename~~
