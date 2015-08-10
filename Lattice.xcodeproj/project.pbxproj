@@ -246,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C819E21B520B5D00D81B86 /* Lattice */,
-				A7C819EF1B520B5D00D81B86 /* ReusableBehaviorsTests */,
+				A7C819EF1B520B5D00D81B86 /* LatticeTests */,
 				A7C819E11B520B5D00D81B86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -281,14 +281,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A7C819EF1B520B5D00D81B86 /* ReusableBehaviorsTests */ = {
+		A7C819EF1B520B5D00D81B86 /* LatticeTests */ = {
 			isa = PBXGroup;
 			children = (
 				A77351C01B76C24E003AF4FF /* Extensions */,
 				A7C81A411B521F8400D81B86 /* Behaviors */,
 				A7C819F01B520B5D00D81B86 /* Supporting Files */,
 			);
-			path = ReusableBehaviorsTests;
+			path = LatticeTests;
 			sourceTree = "<group>";
 		};
 		A7C819F01B520B5D00D81B86 /* Supporting Files */ = {
@@ -721,7 +721,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReusableBehaviorsTests/Info.plist;
+				INFOPLIST_FILE = LatticeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = LatticeTests;
 			};
@@ -734,7 +734,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReusableBehaviorsTests/Info.plist;
+				INFOPLIST_FILE = LatticeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = LatticeTests;
 			};
