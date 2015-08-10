@@ -79,7 +79,7 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
 
     private func retrieveLastPhoto() {
         let lastPhotoRetriever = LastPhotoRetriever()
-        lastPhotoRetriever.queryLastPhoto(toFitInImageView: imageView) { img in
+        lastPhotoRetriever.fetchLastPhoto(resizeTo: nil) { img in
             self.imageView.image = img
         }
     }

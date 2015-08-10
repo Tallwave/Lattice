@@ -9,21 +9,31 @@
 import UIKit
 import Photos
 
-typealias LastPhotoQuery = (UIImage? -> Void)
+typealias ImageCallback = (UIImage? -> Void)
 
 struct LastPhotoRetriever {
-    func queryLastPhoto(toFitInImageView imageView: UIImageView, queryCallback: LastPhotoQuery) {
+    func fetchLastPhoto(resizeTo size: CGSize?, imageCallback: ImageCallback) {
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-//        fetchOptions.fetchLimit = 1
-        if let fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions) {
+        
+        //        fetchOptions.fetchLimit = 1 // Available in iOS 9
+        
+        if let fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions) {
             if let asset = fetchResult.firstObject as? PHAsset {
                 let manager = PHImageManager.defaultManager()
-                let size = CGSize(width: asset.pixelWidth, height: asset.pixelHeight) // imageView.frame.size
-                manager.requestImageForAsset(asset, targetSize: size, contentMode: .AspectFit, options: nil, resultHandler: { image, info in
-                    queryCallback(image)
+                let targetSize = size ?? CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
+                manager.requestImageForAsset(asset,
+                    targetSize: targetSize,
+                    contentMode: .AspectFit,
+                    options: nil,
+                    resultHandler: { image, info in
+                        imageCallback(image)
                 })
+            } else {
+                imageCallback(nil)
             }
+        } else {
+            imageCallback(nil)
         }
     }
 }
