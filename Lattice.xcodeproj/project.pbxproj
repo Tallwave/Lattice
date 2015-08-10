@@ -411,7 +411,7 @@
 			dependencies = (
 			);
 			name = Lattice;
-			productName = ReusableBehaviors;
+			productName = Lattice;
 			productReference = A7C819E01B520B5D00D81B86 /* Lattice.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -429,7 +429,7 @@
 				A7C819EE1B520B5D00D81B86 /* PBXTargetDependency */,
 			);
 			name = LatticeTests;
-			productName = ReusableBehaviorsTests;
+			productName = LatticeTests;
 			productReference = A7C819EB1B520B5D00D81B86 /* LatticeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
