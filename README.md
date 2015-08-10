@@ -1,5 +1,7 @@
-# ReusableBehaviors
+# Lattice
 [![Build Status](https://travis-ci.org/Tallwave/ReusableBehaviors.svg)](https://travis-ci.org/Tallwave/ReusableBehaviors)
+
+*An interlaced structure or pattern fastened together, used typically as support.*
 
 A lot of iOS development is boilerplate code. How many times have you written code to restrict the length of text in a `UITextField`? How many more times do you want to do that? Yeah, me too.
 
