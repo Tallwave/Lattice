@@ -23,7 +23,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ" customClass="IconTextField" customModule="ReusableBehaviors">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ" customClass="IconTextField" customModule="Lattice">
                                 <rect key="frame" x="16" y="69" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m56-f3-IUu"/>
@@ -34,7 +34,7 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="glyphicons_006_user_add"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="ReusableBehaviors">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq" customClass="IconTextField" customModule="Lattice">
                                 <rect key="frame" x="16" y="126" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
@@ -90,15 +90,15 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="5ta-NR-isT" customClass="TextFieldBehaviorContainer" customModule="ReusableBehaviors">
+                <customObject id="5ta-NR-isT" customClass="TextFieldBehaviorContainer" customModule="Lattice">
                     <connections>
                         <outlet property="owner" destination="BYZ-38-t0r" id="4eG-zX-ieG"/>
                         <outlet property="textfield" destination="fLo-Qb-AhZ" id="9oY-IH-hgK"/>
                         <outletCollection property="behaviors" destination="D8A-3d-Gz7" collectionClass="NSMutableArray" id="Gh3-B3-Fd9"/>
                     </connections>
                 </customObject>
-                <customObject id="D8A-3d-Gz7" customClass="TextFieldDoneBehavior" customModule="ReusableBehaviors"/>
-                <customObject id="R50-eK-hNX" customClass="UITextViewDoneBehavior" customModule="ReusableBehaviors">
+                <customObject id="D8A-3d-Gz7" customClass="TextFieldDoneBehavior" customModule="Lattice"/>
+                <customObject id="R50-eK-hNX" customClass="UITextViewDoneBehavior" customModule="Lattice">
                     <connections>
                         <outlet property="owner" destination="BYZ-38-t0r" id="CU8-CZ-yV9"/>
                         <outlet property="textview" destination="ffF-wA-wyd" id="sKy-Yy-rD4"/>
