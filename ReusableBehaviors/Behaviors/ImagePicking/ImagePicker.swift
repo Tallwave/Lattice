@@ -23,7 +23,7 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
     @IBInspectable public var useCamera: Bool = true
     @IBInspectable public var useLastPhoto: Bool = true
 
-    @IBOutlet weak public var imageView: UIImageView!
+    @IBOutlet weak public var imageReceiver: ImageReceiver!
     
     /**
         Likely the same as the `owner`, but could be different. Needed to have an origin to display the UIImagePickerController.
@@ -79,15 +79,15 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
 
     private func retrieveLastPhoto() {
         let lastPhotoRetriever = LastPhotoRetriever()
-        lastPhotoRetriever.fetchLastPhoto(resizeTo: nil) { img in
-            self.imageView.image = img
+        lastPhotoRetriever.fetchLastPhoto(resizeTo: nil) { [unowned self] img in
+            self.imageReceiver.handleImage(img)
         }
     }
 
     // MARK: - ImagePickerDelegate
     //- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
     public func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        imageView.image = image
+        imageReceiver.handleImage(image)
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
 }
