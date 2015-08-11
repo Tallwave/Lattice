@@ -9,8 +9,7 @@
 import UIKit
 
 /**
-
-    Ok. Some behaviors would greatly benefit from having some of the 
+Ok. Some behaviors would greatly benefit from having some of the 
 functionality defined by `UIControl`. For example, a validator that could 
 automatically fire `sendActionsForControlEvents` when validation completes to 
 its receivers would be pretty wicked awesome right? The catch is that I don't 
@@ -24,7 +23,7 @@ public class BehaviorControl: UIControl {
     // MARK: - Lifetime Management
     
     /**
-    Which object this Behavior is bound to. Uses Objective C Runtime magic to make the lifetime of this behavior match its owner's.
+    The object that this Behavior is bound to. Uses Objective C Runtime magic to make the lifetime of this behavior match its owner's. When the owner is released, so is this.
     */
     @IBOutlet weak var owner: NSObject? {
         willSet {
