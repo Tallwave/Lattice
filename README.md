@@ -22,8 +22,6 @@ A big thank you to [Krzysztof Zabłocki](http://www.objc.io/issues/13-architectu
 (Fill out when Cocoapod is setup)
 
 ## Usage
-
-### Adding a Behavior
 In Interface Builder, find the "Object" object in the Object Library Inspector (you can press ⌃⌥⌘3 to bring it up). Drag that onto your scene. You can drop it in the Document Outline or in the top bar of the View Controller, next to the First Responder icon.
 
 In the Identity Inspector (⌥⌘3) change the Class field to whichever behavior you are using.
