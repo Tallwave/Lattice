@@ -26,7 +26,7 @@ struct LastPhotoRetriever {
     func fetchLastPhoto(resizeTo size: CGSize?, imageCallback: ImageCallback) {
         if let fetchResult = searchPhotosLibraryForImages() {
             if let asset = fetchResult.firstObject as? PHAsset {
-                convertAssetToImage(asset, toSize: size, imageCallback: imageCallback)
+                convertAsset(asset, toImageWithSize: size, imageCallback: imageCallback)
             } else {
                 imageCallback(nil)
             }
@@ -46,7 +46,7 @@ struct LastPhotoRetriever {
         return PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions)
     }
 
-    private func convertAssetToImage(asset: PHAsset, toSize size: CGSize?, imageCallback: ImageCallback) {
+    private func convertAsset(asset: PHAsset, toImageWithSize size: CGSize?, imageCallback: ImageCallback) {
         let manager = PHImageManager.defaultManager()
         let targetSize = size ?? CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
         manager.requestImageForAsset(asset,
