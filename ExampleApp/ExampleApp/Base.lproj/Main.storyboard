@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to Faceoogle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-lC-lxc">
-                                <rect key="frame" x="221" y="40" width="158" height="21"/>
+                                <rect key="frame" x="221" y="40" width="157.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-Qb-AhZ" customClass="IconTextField" customModule="Lattice">
-                                <rect key="frame" x="16" y="69" width="568" height="44"/>
+                                <rect key="frame" x="16" y="68" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="m56-f3-IUu"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVV-Bw-lrq">
-                                <rect key="frame" x="16" y="126" width="568" height="44"/>
+                                <rect key="frame" x="16" y="125" width="568" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="zRT-Lr-3RS"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-tf-3l3">
-                                <rect key="frame" x="16" y="178" width="568" height="44"/>
+                                <rect key="frame" x="16" y="177" width="568" height="44"/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.22352941176470589" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4De-RZ-S5N"/>
@@ -57,7 +57,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffF-wA-wyd">
-                                <rect key="frame" x="16" y="241" width="568" height="49"/>
+                                <rect key="frame" x="16" y="240" width="568" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="zkT-Dy-CCc"/>
@@ -66,6 +66,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-Fo-h9L">
+                                <rect key="frame" x="16" y="298" width="33" height="30"/>
+                                <state key="normal" title="Stuff">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stuffTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUg-Ha-4zh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -85,12 +94,26 @@
                             <constraint firstAttribute="centerX" secondItem="3Gc-lC-lxc" secondAttribute="centerX" id="h6G-hX-3TR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="fLo-Qb-AhZ" id="LPS-A5-Wpx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="3va-qc-hPj" customClass="TextFieldBehaviorContainer" customModule="Lattice">
+                <customObject id="4gH-6y-0hA" customClass="TextFieldDoneBehavior" customModule="Lattice">
                     <connections>
-                        <outlet property="owner" destination="BYZ-38-t0r" id="1bb-sL-WWb"/>
-                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="x2B-CC-Z96"/>
+                        <outlet property="owner" destination="fLo-Qb-AhZ" id="t1j-GX-kkE"/>
+                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="U2V-Fb-shG"/>
+                    </connections>
+                </customObject>
+                <customObject id="lV3-31-ZYa" customClass="TextFieldMaxLengthBehavior" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="fLo-Qb-AhZ" id="oBe-gS-Wxe"/>
+                        <outlet property="textfield" destination="fLo-Qb-AhZ" id="lHW-OW-2zF"/>
                     </connections>
                 </customObject>
             </objects>

@@ -8,26 +8,35 @@
 
 import UIKit
 
-typealias TextFieldLookup = [String: TextFieldBehaviorContainer]
+typealias TextFieldLookup = [UITextField: TextFieldBehaviorContainer]
 
-class TextFieldDelegateDispatcher {
+public class TextFieldDelegateDispatcher {
     private var lookup: TextFieldLookup = TextFieldLookup()
     
     private init() {
     }
     
-    static let dispatcher = TextFieldDelegateDispatcher()
+    public static let dispatcher = TextFieldDelegateDispatcher()
+    
+    public func count() {
+        println("lookup count: \(lookup.count)")
+    }
     
     func addBehavior(behavior: TextFieldBehavior, toTextField textField: UITextField) {
         let symbol = symbolForTextField(textField)
-        if let container = lookup[symbol] {
+        if let container = lookup[textField] {
             container.addBehavior(behavior)
         } else {
             let container = TextFieldBehaviorContainer()
             textField.delegate = container
             container.addBehavior(behavior)
-            lookup[symbol] = container
+            lookup[textField] = container
         }
+    }
+    
+    func removeTextField(textField: UITextField) {
+        let symbol = symbolForTextField(textField)
+        lookup.removeValueForKey(textField)
     }
     
     private func symbolForTextField(textField: UITextField) -> String {

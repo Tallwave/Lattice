@@ -130,6 +130,7 @@
 		A77351D61B77F94D003AF4FF /* TextFieldNumericMaskBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNumericMaskBehavior.swift; sourceTree = "<group>"; };
 		A77351D91B780348003AF4FF /* LastPhotoRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastPhotoRetriever.swift; sourceTree = "<group>"; };
 		A775F90A1B7A4D6F00CFBBE4 /* TextFieldDelegateDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegateDispatcher.swift; sourceTree = "<group>"; };
+		A775F90E1B7A512300CFBBE4 /* Lattice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Lattice.playground; sourceTree = SOURCE_ROOT; };
 		A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidator.swift; sourceTree = "<group>"; };
 		A780572F1B725E2000CD5187 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A78057331B725EF600CD5187 /* RequiredTextValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredTextValidatorTests.swift; sourceTree = "<group>"; };
@@ -333,6 +334,7 @@
 			children = (
 				A7A5EFB71B73FD5900599F2A /* NextFieldBehavior.swift */,
 				A7C81A1E1B520CDD00D81B86 /* TextFieldBehavior.swift */,
+				A775F90E1B7A512300CFBBE4 /* Lattice.playground */,
 				A775F90A1B7A4D6F00CFBBE4 /* TextFieldDelegateDispatcher.swift */,
 				A7C81A1F1B520CDD00D81B86 /* TextFieldBehaviorContainer.swift */,
 				A7C81A201B520CDD00D81B86 /* TextFieldDoneBehavior.swift */,
