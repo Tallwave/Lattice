@@ -27,6 +27,9 @@
                                     <color key="titleColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="validate:" destination="r1d-KP-xyQ" eventType="touchUpInside" id="At6-rc-zoZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-lC-lxc">
                                 <rect key="frame" x="248" y="84" width="105.5" height="20.5"/>
@@ -37,7 +40,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-fc-H8L">
                                 <rect key="frame" x="16" y="134" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP0-SK-xGA">
                                 <rect key="frame" x="16" y="180" width="46" height="21"/>
@@ -52,7 +55,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0o-la-CZB">
                                 <rect key="frame" x="16" y="200" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xU-qj-mSp">
                                 <rect key="frame" x="174" y="246" width="46" height="21"/>
@@ -67,7 +70,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7N-Ie-Qtf">
                                 <rect key="frame" x="174" y="266" width="410" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-8x-sax">
                                 <rect key="frame" x="16" y="266" width="150" height="150"/>
@@ -110,6 +113,9 @@
                                 <state key="normal" title="Change">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="presentPickerOptions:" destination="82c-YG-Ecg" eventType="touchUpInside" id="U66-q2-XS3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIY-G4-1Rd">
                                 <rect key="frame" x="16" y="114" width="46" height="21"/>
@@ -165,6 +171,120 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="Ybc-IL-LA8" userLabel="Name Max Length" customClass="TextFieldMaxLengthBehavior" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="x6d-mT-HJj"/>
+                        <outlet property="textfield" destination="JbI-fc-H8L" id="YQB-4D-zvn"/>
+                    </connections>
+                </customObject>
+                <customObject id="Yf2-Kx-CI5" userLabel="Email Max Length" customClass="TextFieldMaxLengthBehavior" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="ORD-v1-LDF"/>
+                        <outlet property="textfield" destination="f0o-la-CZB" id="A3k-pg-fYB"/>
+                    </connections>
+                </customObject>
+                <customObject id="A4i-AD-vge" userLabel="Phone Max Length" customClass="TextFieldMaxLengthBehavior" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="H9H-Hp-c7U"/>
+                        <outlet property="textfield" destination="u7N-Ie-Qtf" id="gU2-Lt-t7B"/>
+                    </connections>
+                </customObject>
+                <customObject id="82c-YG-Ecg" customClass="StandardImagePickerBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="controller" destination="BYZ-38-t0r" id="vno-rX-UWG"/>
+                        <outlet property="imageView" destination="4Vh-8x-sax" id="X5d-4k-xpl"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="73F-Mt-F25"/>
+                    </connections>
+                </customObject>
+                <customObject id="r9m-Xz-ZVb" customClass="ScrollToFitBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="constraintToModify" destination="2Eh-Qb-r7z" id="hM6-0o-DQC"/>
+                        <outlet property="containingView" destination="8bC-Xf-vdC" id="rmS-6e-h0l"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="D5u-ZK-TcH"/>
+                        <outletCollection property="textControls" destination="kzY-xh-Mfx" collectionClass="NSMutableArray" id="VIS-LE-H4q"/>
+                        <outletCollection property="textControls" destination="u7N-Ie-Qtf" collectionClass="NSMutableArray" id="u1f-72-zfq"/>
+                    </connections>
+                </customObject>
+                <customObject id="TNT-R7-yAf" customClass="UITextViewDoneBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="Cvb-2h-8oi"/>
+                        <outlet property="textview" destination="kzY-xh-Mfx" id="cZb-PW-3Pz"/>
+                    </connections>
+                </customObject>
+                <customObject id="QJB-Ad-nyn" userLabel="Name -&gt; Email" customClass="NextFieldBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="destinationView" destination="f0o-la-CZB" id="u61-SJ-pQN"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="gPS-NW-hkA"/>
+                        <outlet property="textfield" destination="JbI-fc-H8L" id="c6o-Vv-LTW"/>
+                    </connections>
+                </customObject>
+                <customObject id="btN-ht-46m" userLabel="Email -&gt; Phone" customClass="NextFieldBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="destinationView" destination="u7N-Ie-Qtf" id="CTp-OO-AhV"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="lWa-sX-Qvz"/>
+                        <outlet property="textfield" destination="f0o-la-CZB" id="Xhs-Df-096"/>
+                    </connections>
+                </customObject>
+                <customObject id="gF1-VQ-KLi" userLabel="Phone -&gt; Bio" customClass="NextFieldBehavior" customModule="Lattice">
+                    <connections>
+                        <outlet property="destinationView" destination="kzY-xh-Mfx" id="7YD-xD-5iA"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="RaN-MO-lcr"/>
+                        <outlet property="textfield" destination="u7N-Ie-Qtf" id="p5L-OP-Myf"/>
+                    </connections>
+                </customObject>
+                <customObject id="r1d-KP-xyQ" customClass="ValidatorContainer" customModule="Lattice">
+                    <connections>
+                        <action selector="validationUpdated:" destination="he3-dy-Ohd" eventType="valueChanged" id="oNW-uA-drD"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="PYP-6h-mJG"/>
+                        <outletCollection property="validators" destination="N0Z-al-NC1" collectionClass="NSMutableArray" id="OgR-Hc-j3O"/>
+                    </connections>
+                </customObject>
+                <customObject id="N0Z-al-NC1" customClass="RequiredTextValidator" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="trimEndsOfText" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Name is Required"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="view" destination="JbI-fc-H8L" id="XKZ-zm-zaY"/>
+                    </connections>
+                </customObject>
+                <customObject id="he3-dy-Ohd" customClass="PostValidationTransitioner" customModule="Lattice">
+                    <connections>
+                        <outlet property="failureAction" destination="1iu-hH-yxJ" id="dtY-dV-w4X"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="BBC-gj-En9"/>
+                        <outlet property="successAction" destination="h2m-MM-z8I" id="PKA-vN-yNx"/>
+                    </connections>
+                </customObject>
+                <customObject id="h2m-MM-z8I" customClass="PostValidationSegueAction" customModule="Lattice">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="segueIdentifier" value="transitionToHome"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="controller" destination="BYZ-38-t0r" id="qJd-I1-mzy"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="stu-n1-cdU"/>
+                    </connections>
+                </customObject>
+                <customObject id="1iu-hH-yxJ" customClass="PostValidationFailureAlertAction" customModule="Lattice">
+                    <connections>
+                        <outlet property="controller" destination="BYZ-38-t0r" id="lW4-8P-Rae"/>
+                        <outlet property="owner" destination="BYZ-38-t0r" id="3bM-hM-ox8"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1486" y="428"/>
         </scene>
