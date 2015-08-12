@@ -24,6 +24,9 @@ can. For example, `12345` masked against the phone number mask will be
 `(123) 45`.
 */
 struct NumberMasker {
+    /**
+    Formats the string with the provided pattern.
+    */
     func mask(string: String, withPattern pattern: String) -> String {
         var stringIndex = 0
         var patternIndex = 0

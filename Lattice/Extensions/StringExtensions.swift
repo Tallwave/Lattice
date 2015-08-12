@@ -9,10 +9,16 @@
 import UIKit
 
 extension String {
+    /**
+    Trims all the whitespace at the beginning and end of a string.
+    */
     func stringByTrimmingWhitespace() -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
     }
 
+    /**
+    True if the string is a number.
+    */
     func isDigit() -> Bool {
         let components = self.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet())
         return components.filter({ !$0.isEmpty }).count == 0

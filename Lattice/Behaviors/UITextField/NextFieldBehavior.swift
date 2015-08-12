@@ -9,11 +9,17 @@
 import UIKit
 
 /**
-Tells which view should be the first responder next.
+    Tells which view should be the next first responder.
 */
 public class NextFieldBehavior: TextFieldBehavior {
+    /**
+    The view that will be the next first responder.
+    */
     @IBOutlet weak var destinationView: UIView!
 
+    /**
+    Resigns the first responder from the current textfield and then tells the `destinationView` to become first responder.
+    */
     public func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         destinationView.becomeFirstResponder()

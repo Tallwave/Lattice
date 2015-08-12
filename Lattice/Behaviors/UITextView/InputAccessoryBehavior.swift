@@ -16,7 +16,7 @@ public enum ToolbarButtonAlignment {
 }
 
 /**
-    Display an array of buttons above the keyboard for a `UITextView`.
+    Display a list of buttons above the keyboard for a `UITextView` or `UITextField`.
 */
 public class InputAccessoryBehavior: Behavior {
 
@@ -25,9 +25,21 @@ public class InputAccessoryBehavior: Behavior {
     */
     @IBInspectable var buttonAlignment: ToolbarButtonAlignment = .Right
 
+    /**
+    The textview that has the button bar.
+    */
     @IBOutlet public weak var textview: UITextView? {
         didSet {
             textview?.inputAccessoryView = createAccessoryView()
+        }
+    }
+
+    /**
+    The textfield that has the button bar.
+    */
+    @IBOutlet public weak var textField: UITextField? {
+        didSet {
+            textField?.inputAccessoryView = createAccessoryView()
         }
     }
 

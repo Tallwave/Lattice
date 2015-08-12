@@ -11,7 +11,7 @@ import UIKit
 private let standardToolbarHeight: CGFloat = 44
 
 /**
-A Toolbar that is displayed above a keyboard as an inputAccessoryView.
+A Toolbar that is displayed above the keyboard as an inputAccessoryView.
 */
 class AccessoryBar: UIToolbar {
     
