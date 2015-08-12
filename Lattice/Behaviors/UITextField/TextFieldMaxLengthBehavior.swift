@@ -12,6 +12,9 @@ import UIKit
     Ensures that the text of the associated `UITextField` does not exceed `maxLength`.
 */
 public class TextFieldMaxLengthBehavior: TextFieldBehavior {
+    /**
+    Maximum length the text should be.
+    */
     @IBInspectable public var maxLength: Int = 0
     
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {

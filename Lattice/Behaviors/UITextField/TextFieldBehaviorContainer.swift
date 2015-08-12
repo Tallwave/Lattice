@@ -8,12 +8,17 @@
 
 import UIKit
 
+/**
+    Treats a group of `TextFieldBehaviors` as a single delegate for a `UITextField`. When the textfield calls its delegate method, this loops through each behavior and sees if it has that particular method defined.
+*/
 class TextFieldBehaviorContainer: NSObject, UITextFieldDelegate {
-    // Allow bubbling up of delegate methods to the owner.
-    weak var delegate: UITextFieldDelegate?
-    
     private var behaviors: [TextFieldBehavior] = []
     
+    /**
+    Adds the `behavior` to the group.
+    
+    :param: behavior The `Behavior` to add.
+    */
     func addBehavior(behavior: TextFieldBehavior) {
         behaviors.append(behavior)
     }
@@ -27,12 +32,10 @@ class TextFieldBehaviorContainer: NSObject, UITextFieldDelegate {
 
     func textFieldDidBeginEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidBeginEditing?(tf) }
-        delegate?.textFieldDidBeginEditing?(tf)
     }
     
     func textFieldDidEndEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidEndEditing?(tf) }
-        delegate?.textFieldDidEndEditing?(tf)
     }
     
     func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
@@ -64,9 +67,6 @@ class TextFieldBehaviorContainer: NSObject, UITextFieldDelegate {
                     return result
                 }
             }
-        }
-        if let delegate = delegate, delegateResult = function(delegate) {
-            return expected == delegateResult
         }
         return expected
     }
