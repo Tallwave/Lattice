@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70F2E611B7AF263008B0E5B /* BaseRegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F2E601B7AF263008B0E5B /* BaseRegularExpressionValidator.swift */; };
+		A70F2E621B7AF263008B0E5B /* BaseRegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70F2E601B7AF263008B0E5B /* BaseRegularExpressionValidator.swift */; };
 		A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ValidatorContainer.swift */; };
 		A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930E91B71144800211FD5 /* ValidatorContainer.swift */; };
 		A71930ED1B71154A00211FD5 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71930EC1B71154A00211FD5 /* Validator.swift */; };
@@ -100,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A70F2E601B7AF263008B0E5B /* BaseRegularExpressionValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRegularExpressionValidator.swift; sourceTree = "<group>"; };
 		A71930E91B71144800211FD5 /* ValidatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorContainer.swift; sourceTree = "<group>"; };
 		A71930EC1B71154A00211FD5 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Lattice/Behaviors/Validation/Validator.swift; sourceTree = SOURCE_ROOT; };
 		A76112B71B72670A00C637A8 /* BehaviorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorControl.swift; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 				A76112E81B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift */,
 				A76112E31B72B92800C637A8 /* NumberValidator.swift */,
 				A76112D91B72A1AF00C637A8 /* RegularExpressionValidator.swift */,
+				A70F2E601B7AF263008B0E5B /* BaseRegularExpressionValidator.swift */,
 				A780572C1B725CC800CD5187 /* RequiredTextValidator.swift */,
 				A76112CC1B729E7500C637A8 /* TextControlValidator.swift */,
 			);
@@ -504,6 +508,7 @@
 				A76112CA1B729DAE00C637A8 /* MinLengthValidator.swift in Sources */,
 				A7C81A261B520CDD00D81B86 /* Behavior.swift in Sources */,
 				A71930EA1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
+				A70F2E611B7AF263008B0E5B /* BaseRegularExpressionValidator.swift in Sources */,
 				A71930ED1B71154A00211FD5 /* Validator.swift in Sources */,
 				A77351DA1B780348003AF4FF /* LastPhotoRetriever.swift in Sources */,
 				A76112DA1B72A1AF00C637A8 /* RegularExpressionValidator.swift in Sources */,
@@ -570,6 +575,7 @@
 				A761132C1B78FC4400C637A8 /* ImagePickerBehavior.swift in Sources */,
 				A76112E21B72A3FA00C637A8 /* EmailTextValidatorTests.swift in Sources */,
 				A76113281B78F64F00C637A8 /* ImageReceiver.swift in Sources */,
+				A70F2E621B7AF263008B0E5B /* BaseRegularExpressionValidator.swift in Sources */,
 				A71930EB1B71144800211FD5 /* ValidatorContainer.swift in Sources */,
 				A76112D31B729FE700C637A8 /* MaxLengthValidator.swift in Sources */,
 				A76112EA1B72C13000C637A8 /* NorthAmericanPhoneNumberValidator.swift in Sources */,

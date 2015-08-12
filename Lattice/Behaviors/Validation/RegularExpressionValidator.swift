@@ -8,14 +8,12 @@
 
 import UIKit
 
-public class RegularExpressionValidator: TextControlValidator {
-    @IBInspectable var pattern: String = ""
-    
-    override func validateText(text: String) -> Bool {
-        if count(text) == 0 { return super.validateText(text) }
-        if let match = text.rangeOfString(pattern, options: .RegularExpressionSearch) {
-            return true
-        }
-        return false
+/**
+    The same as `BaseRegularExpressionValidator` but exposes the `pattern` as an `IBInspectable`.
+*/
+public class RegularExpressionValidator: BaseRegularExpressionValidator {
+    @IBInspectable override var pattern: String {
+        get { return super.pattern }
+        set { super.pattern = newValue }
     }
 }
