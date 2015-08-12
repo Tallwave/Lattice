@@ -30,7 +30,7 @@ public class Behavior: NSObject {
         }
         didSet {
             if let newOwner = owner {
-                bindLifetimeObjectToObject(newOwner)
+                bindLifetimeToObject(newOwner)
             }
         }
     }
@@ -39,7 +39,7 @@ public class Behavior: NSObject {
         static var DescriptiveName = "nsh_DescriptiveName"
     }
     
-    private func bindLifetimeObjectToObject(object: NSObject) {
+    private func bindLifetimeToObject(object: NSObject) {
         objc_setAssociatedObject(object,
             &AssociatedKeys.DescriptiveName,
             self,

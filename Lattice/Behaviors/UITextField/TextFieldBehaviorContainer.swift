@@ -8,71 +8,65 @@
 
 import UIKit
 
-public class TextFieldBehaviorContainer: TextFieldBehavior {
-    // Allow bubbling up of delegate methods to the owner.
-    @IBOutlet weak var delegate: UITextFieldDelegate?
+/**
+    Treats a group of `TextFieldBehaviors` as a single delegate for a `UITextField`. When the textfield calls its delegate method, this loops through each behavior and sees if it has that particular method defined.
+*/
+class TextFieldBehaviorContainer: NSObject, UITextFieldDelegate {
+    private var behaviors: [TextFieldBehavior] = []
     
-    @IBOutlet weak var textfield: UITextField? {
-        didSet {
-            textfield?.delegate = self
-        }
+    /**
+    Adds the `behavior` to the group.
+    
+    :param: behavior The `Behavior` to add.
+    */
+    func addBehavior(behavior: TextFieldBehavior) {
+        behaviors.append(behavior)
     }
     
-    @IBOutlet public var behaviors: [TextFieldBehavior]!
-    
     // MARK: - UITextFieldDelegate
-    public func textField(tf: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(tf: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         return allBehaviorsAre(true) { $0.textField?(tf,
             shouldChangeCharactersInRange: range,
             replacementString: string) }
     }
 
-    public func textFieldDidBeginEditing(tf: UITextField) {
+    func textFieldDidBeginEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidBeginEditing?(tf) }
-        delegate?.textFieldDidBeginEditing?(tf)
     }
     
-    public func textFieldDidEndEditing(tf: UITextField) {
+    func textFieldDidEndEditing(tf: UITextField) {
         onAllBehaviors { $0.textFieldDidEndEditing?(tf) }
-        delegate?.textFieldDidEndEditing?(tf)
     }
     
-    public func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
+    func textFieldShouldBeginEditing(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldBeginEditing?(tf) }
     }
 
-    public func textFieldShouldClear(tf: UITextField) -> Bool {
+    func textFieldShouldClear(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldClear?(tf) }
     }
     
-    public func textFieldShouldEndEditing(tf: UITextField) -> Bool {
+    func textFieldShouldEndEditing(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldEndEditing?(tf) }
     }
     
-    public func textFieldShouldReturn(tf: UITextField) -> Bool {
+    func textFieldShouldReturn(tf: UITextField) -> Bool {
         return allBehaviorsAre(true) { $0.textFieldShouldReturn?(tf) }
     }
 
     private func onAllBehaviors(action: (UITextFieldDelegate) -> Void) {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                action(behavior)
-            }
+        for behavior in behaviors as [UITextFieldDelegate] {
+            action(behavior)
         }
     }
 
     private func allBehaviorsAre(expected: Bool, function: ((UITextFieldDelegate) -> Bool?)) -> Bool {
-        if let allBehaviors = behaviors {
-            for behavior in allBehaviors as [UITextFieldDelegate] {
-                if let result = function(behavior) {
-                    if result != expected {
-                        return result
-                    }
+        for behavior in behaviors as [UITextFieldDelegate] {
+            if let result = function(behavior) {
+                if result != expected {
+                    return result
                 }
             }
-        }
-        if let delegate = delegate, delegateResult = function(delegate) {
-            return expected == delegateResult
         }
         return expected
     }

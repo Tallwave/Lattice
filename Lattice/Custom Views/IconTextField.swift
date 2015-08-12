@@ -49,4 +49,8 @@ Embeds an icon (as a `UIImageView`) in a `UITextField`. The icon is left-aligned
     override public func editingRectForBounds(bounds: CGRect) -> CGRect {
         return textRectForBounds(bounds)
     }
+    
+    deinit {
+        println("icon poof")
+    }
 }

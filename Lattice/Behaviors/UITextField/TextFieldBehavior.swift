@@ -12,4 +12,15 @@ import UIKit
 An empty class to allow for `TextFieldBehaviorContainer`'s `behaviors` property to contain both `Behavior` and `UITextFieldDelegate`.
 */
 public class TextFieldBehavior: Behavior, UITextFieldDelegate {
+    @IBOutlet weak var textfield: UITextField? {
+        didSet {
+            if let tf = self.textfield {
+                TextFieldDelegateDispatcher.dispatcher.addBehavior(self, toTextField: tf)
+            }
+        }
+    }
+    
+    deinit {
+        println("POOF")
+    }
 }
