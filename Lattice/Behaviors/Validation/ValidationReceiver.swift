@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    Interface Builder doesn't really like protocols, but ¯\_(ツ)_/¯. Defines the methods for handling validation results.
+*/
 public protocol ValidationReceiver {
     func validationUpdated(sender: ValidatorContainer)
     var successAction: PostValidationAction? { get set }

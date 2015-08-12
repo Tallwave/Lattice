@@ -9,31 +9,52 @@
 import UIKit
 import Photos
 
+/**
+    Alias for sending an image back from an asynchronous process.
+*/
 typealias ImageCallback = (UIImage? -> Void)
 
+/**
+    Fetches the last photo taken in the user's library.
+
+    [Read more about the Photos Framework](http://blog.swilliams.me/words/2015/08/09/finding-the-last-photo-taken/).
+*/
 struct LastPhotoRetriever {
+    /**
+        Fetches the last photo taken in the user's library.
+    */
     func fetchLastPhoto(resizeTo size: CGSize?, imageCallback: ImageCallback) {
-        let fetchOptions = PHFetchOptions()
-        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-        
-        //        fetchOptions.fetchLimit = 1 // Available in iOS 9
-        
-        if let fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions) {
+        if let fetchResult = searchPhotosLibraryForImages() {
             if let asset = fetchResult.firstObject as? PHAsset {
-                let manager = PHImageManager.defaultManager()
-                let targetSize = size ?? CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
-                manager.requestImageForAsset(asset,
-                    targetSize: targetSize,
-                    contentMode: .AspectFit,
-                    options: nil,
-                    resultHandler: { image, info in
-                        imageCallback(image)
-                })
+                convertAsset(asset, toImageWithSize: size, imageCallback: imageCallback)
             } else {
                 imageCallback(nil)
             }
         } else {
             imageCallback(nil)
         }
+    }
+
+    private var fetchOptions: PHFetchOptions {
+        let options = PHFetchOptions()
+        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+//        options.fetchLimit = 1 // Available in iOS 9
+        return options
+    }
+
+    private func searchPhotosLibraryForImages() -> PHFetchResult? {
+        return PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions)
+    }
+
+    private func convertAsset(asset: PHAsset, toImageWithSize size: CGSize?, imageCallback: ImageCallback) {
+        let manager = PHImageManager.defaultManager()
+        let targetSize = size ?? CGSize(width: asset.pixelWidth, height: asset.pixelHeight)
+        manager.requestImageForAsset(asset,
+            targetSize: targetSize,
+            contentMode: .AspectFit,
+            options: nil,
+            resultHandler: { image, info in
+                imageCallback(image)
+        })
     }
 }

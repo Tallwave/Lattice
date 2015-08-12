@@ -16,6 +16,9 @@ Embeds an icon (as a `UIImageView`) in a `UITextField`. The icon is left-aligned
 */
 @IBDesignable public class IconTextField: UITextField {
 
+    /**
+    The image that will be displayed in the textfield.
+    */
     @IBInspectable var icon: UIImage?
     
     private var iconImageView: UIImageView?

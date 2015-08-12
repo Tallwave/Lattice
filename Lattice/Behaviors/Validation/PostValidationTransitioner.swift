@@ -24,7 +24,10 @@ public class PostValidationTransitioner: Behavior, ValidationReceiver {
     What happens when validation fails.
     */
     @IBOutlet public weak var failureAction: PostValidationAction?
-    
+
+    /**
+    Designed to receive the `ValueChanged` event from a `ValidatorContainer`. 
+    */
     @IBAction public func validationUpdated(sender: ValidatorContainer) {
         if sender.isValid {
             success()

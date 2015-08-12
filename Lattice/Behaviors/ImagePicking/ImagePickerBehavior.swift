@@ -9,32 +9,52 @@
 import UIKit
 
 /**
-    Wraps up the logic to pick an image. The user can use the Last Photo Taken,
-Camera, or pick from their library. The image is sent to an `ImageReceiver` to
-handle what was picked.
+    Wraps up the logic for picking an image. The user first picks to use the Last Photo Taken, Camera, or pick from their Library. A `UIImagePickerController` is presented (if applicable), and then the image is sent to an `ImageReceiver` to handle what was picked.
 
-In many cases you just want to display the image in a `UIImageView`. Use the
-`StandardImagePickerBehavior` for that to avoid creating a separate Receiver.
+    In many cases you just want to display the image in a `UIImageView`. If you don't need the extra customizability that the `ImageReceiver` provides, wse the `StandardImagePickerBehavior`.
+
+## Usage
+1. Drag an Object onto the scene in Interface Builder
+2. Set its class to `ImagePickerBehavior`
+3. Connect the `owner` and `controller` outlets
+4. Connect the `presentPickerOptions` action (usually to a `TouchUpInside` event)
+5. Drag another Object onto the scene and use an `ImageReceiver` subclass
+6. Connect an outler from the `imageReceiver` property here to the new `ImageReceiver` object
+
 */
 public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // MARK: - Sources
+    // TODO:
+    //   * If only one picker is enabled, don't display the sheet
+
     /**
-        Which sources to pick from.
-    
-        TODO: 
-            * If only one picker is enabled, don't display the sheet
+        Allow the user to pick images from their own library.
     */
     @IBInspectable public var useLibrary: Bool = true
+    /**
+        Allow the user to take pictures with their camera.
+    */
     @IBInspectable public var useCamera: Bool = true
+    /**
+        Pulls the last photo taken from the user's library.
+    */
     @IBInspectable public var useLastPhoto: Bool = true
 
-    @IBOutlet weak public var imageReceiver: ImageReceiver!
-    
+    // MARK: - Receiver
     /**
-        Likely the same as the `owner`, but could be different. Needed to have 
-    an origin to display the UIImagePickerController.
+        When an image is picked, this object receives it and does something intelligent with it.
+    */
+    @IBOutlet weak public var imageReceiver: ImageReceiver!
+
+    // MARK: - User Interaction
+    /**
+        Likely the same as the `owner`, but could be different. This is necessary to present `UIImagePickerControllers`.
     */
     @IBOutlet weak public var controller: UIViewController!
 
+    /**
+        Displays a sheet with all of the actions available.
+    */
     @IBAction public func presentPickerOptions(sender: AnyObject) {
         let sheet = UIAlertController(title: nil,
             message: nil,
@@ -90,12 +110,14 @@ public class ImagePickerBehavior: Behavior, UIImagePickerControllerDelegate, UIN
     }
 
     // MARK: - ImagePickerDelegate
-    //- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
     public func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         sendImageToReceiver(image)
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
+    /**
+    Sends the image that was picked to the `ImageReceiver`.
+    */
     public func sendImageToReceiver(image: UIImage?) {
         imageReceiver.handleImage(image)
     }

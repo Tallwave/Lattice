@@ -13,7 +13,7 @@ import UIKit
 */
 public class RequiredTextValidator: TextControlValidator {
     /**
-    Allows for empty text to pass validation. `false` by default.
+    If true, trims whitespace from the beginning and end of the `text` before validating.
     */
     @IBInspectable var trimEndsOfText: Bool = true
     

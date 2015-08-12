@@ -9,9 +9,12 @@
 import UIKit
 
 /**
-Wraps the `NumberMasker` class into a Behavior. 
+Wraps the `NumberMasker` class into a Behavior. Converts the `text` of the `TextField` to a format defined in `pattern`.
 */
 public class TextFieldNumericMaskBehavior: TextFieldBehavior {
+    /**
+    The pattern `NumberMasker` uses to format the `text`.
+    */
     @IBInspectable public var pattern: String = ""
     let masker = NumberMasker()
 

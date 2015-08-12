@@ -1,4 +1,7 @@
 # Lattice
+
+![Lattice: Boilerplate Removal Library](http://tallwave.github.io/Lattice/assets/Lattice.png)
+
 [![Build Status](https://travis-ci.org/Tallwave/Lattice.svg)](https://travis-ci.org/Tallwave/Lattice)
 
 *An interlaced structure or pattern fastened together, used typically as support.*
@@ -15,11 +18,22 @@ This was implemented around Storyboards. It might work with regular old Xibs, bu
 
 A big thank you to [Krzysztof Zabłocki](http://www.objc.io/issues/13-architecture/behaviors/) for the idea. I ported over some of his code to Swift.
 
+## Installation
+(Fill out when Cocoapod is setup)
+
+## Usage
+In Interface Builder, find the "Object" object in the Object Library Inspector (you can press ⌃⌥⌘3 to bring it up). Drag that onto your scene. You can drop it in the Document Outline or in the top bar of the View Controller, next to the First Responder icon.
+
+In the Identity Inspector (⌥⌘3) change the Class field to whichever behavior you are using.
+
+Connect the Outlets on the Behavior (right click on the Behavior, or use the Connections inspector, ⌥⌘6). You'll need to connect the [owner] property and at least one to the view you are manipulating. Some Behaviors are more complex and may need additional connections. Refer to the Behaviors documentation for further details.
+
+That's it! 
+
 # Next Steps
 1. ~~Right now this is just a sample project. Move all the useful classes out to into a library.~~
 2. ~~Tests! Also add something like CircleCI.~~ Using [Travis](https://travis-ci.org/Tallwave/Lattice)
-3. Add more (a lot more) behaviors.
-   * Subclass NumberMasker for CreditCard, Phone, Time
+3. ~~Add more (a lot more) behaviors.~~ Good enough for 0.1.
 4. ~~Rename~~
 5. Release as a Cocoapod.
 
@@ -28,4 +42,4 @@ A big thank you to [Krzysztof Zabłocki](http://www.objc.io/issues/13-architectu
 2. Make changes.
 3. Submit a Pull Request.
 
-[Here's a workflow describing how that should work](http://blog.swilliams.me/words/2015/06/30/basic-github-workflow-for-collaboration/)
+[Here's some details about the GitHub workflow](http://blog.swilliams.me/words/2015/06/30/basic-github-workflow-for-collaboration/).
