@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/Tallwave/Lattice'
   s.social_media_url = 'http://twitter.com/swilliams'
   s.authors = { 'Scott Williams' => 'scott@swilliams.me' }
-  s.source = { :git => 'https://github.com/Tallwave/Lattice', :tag => s.version }
+  s.source = { :git => 'https://github.com/Tallwave/Lattice.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
 
