@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Lattice'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.license = 'MIT'
   s.summary = 'Reusable UI Code Pieces'
   s.homepage = 'https://github.com/Tallwave/Lattice'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Lattice/*.swift'
+  s.source_files = 'Lattice/**/*.swift'
 
   s.requires_arc = true
 end
