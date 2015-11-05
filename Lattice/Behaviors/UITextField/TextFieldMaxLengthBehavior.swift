@@ -20,7 +20,7 @@ public class TextFieldMaxLengthBehavior: TextFieldBehavior {
     
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if maxLength == 0 { return true }
-        if let text = textfield?.text {
+        if let text = textField.text {
             let oldLength = text.characters.count
             let replacementLength = string.characters.count
 
