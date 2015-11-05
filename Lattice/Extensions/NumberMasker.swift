@@ -30,8 +30,8 @@ struct NumberMasker {
     func mask(string: String, withPattern pattern: String) -> String {
         var stringIndex = 0
         var patternIndex = 0
-        let stringCount = count(string)
-        let patternCount = count(pattern)
+        let stringCount = string.characters.count
+        let patternCount = pattern.characters.count
         var formattedString = ""
 
         while stringIndex < stringCount && patternIndex < patternCount {
@@ -57,8 +57,8 @@ struct NumberMasker {
     }
 
     private func character(inString string: String, atIndex index: Int) -> String {
-        let startStringIndex = advance(string.startIndex, index)
-        let endStringIndex = advance(string.startIndex, index + 1)
+        let startStringIndex = string.startIndex.advancedBy(index)
+        let endStringIndex = string.startIndex.advancedBy(index + 1)
         return string.substringWithRange(Range<String.Index>(start: startStringIndex, end: endStringIndex))
     }
 }

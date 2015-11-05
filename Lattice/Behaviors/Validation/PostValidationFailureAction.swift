@@ -47,7 +47,7 @@ public class PostValidationFailureAlertAction: PostValidationFailureAction {
     Display the validation errors in a `UIAlertController`.
     */
     override public func displayFailures(failingValidators: [Validator]) {
-        let errorMessage = join("\n", failingValidators.map({ $0.errorMessage }))
+        let errorMessage = failingValidators.map({ $0.errorMessage }).joinWithSeparator("\n")
         let alert = UIAlertController(title: "Validation Errors", message: errorMessage, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
             alert.dismissViewControllerAnimated(true, completion: nil)

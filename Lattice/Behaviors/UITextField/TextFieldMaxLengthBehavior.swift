@@ -20,11 +20,14 @@ public class TextFieldMaxLengthBehavior: TextFieldBehavior {
     
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if maxLength == 0 { return true }
-        let oldLength = count(textField.text)
-        let replacementLength = count(string)
+        if let text = textfield?.text {
+            let oldLength = text.characters.count
+            let replacementLength = string.characters.count
 
-        let newLength = oldLength - range.length + replacementLength
-        let hasNewLine = contains(string, "\n")
-        return newLength <= maxLength || hasNewLine
+            let newLength = oldLength - range.length + replacementLength
+            let hasNewLine = string.characters.contains("\n")
+            return newLength <= maxLength || hasNewLine
+        }
+        return true
     }
 }

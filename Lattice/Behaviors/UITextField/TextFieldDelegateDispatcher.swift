@@ -35,8 +35,8 @@ public class TextFieldDelegateDispatcher {
     /**
     Groups all the `behaviors` associated with `textField` together.
     
-    :param: behavior The `Behavior` to add to the `textField`.
-    :param: textField The `UITextField` that will use the `behavior`.
+    - parameter behavior: The `Behavior` to add to the `textField`.
+    - parameter textField: The `UITextField` that will use the `behavior`.
     
     NOTE: There may be a memory leak associated with this. Behaviors are added to an array in  `TextFieldBehaviorContainer`. When adding an object to an array, the array retains the object. So even though the VC containing the Behavior might be released, the behavior will still exist in the container.
     */
@@ -55,7 +55,7 @@ public class TextFieldDelegateDispatcher {
     /**
     Removes the `textField` from the container.
     
-    :param: textField The `UITextField` to remove.
+    - parameter textField: The `UITextField` to remove.
     */
     func removeTextField(textField: UITextField) {
         let symbol = symbolForTextField(textField)

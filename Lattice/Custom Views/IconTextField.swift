@@ -51,6 +51,6 @@ Embeds an icon (as a `UIImageView`) in a `UITextField`. The icon is left-aligned
     }
     
     deinit {
-        println("icon poof")
+        print("icon poof")
     }
 }

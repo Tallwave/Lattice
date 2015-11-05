@@ -12,7 +12,7 @@ extension Array {
     /**
     Returns true if every element within the array is true for `fn`.
     */
-    func all(fn: (T) -> Bool) -> Bool {
+    func all(fn: (Element) -> Bool) -> Bool {
         for obj in self {
             if !fn(obj) {
                 return false

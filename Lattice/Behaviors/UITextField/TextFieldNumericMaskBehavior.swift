@@ -23,15 +23,18 @@ public class TextFieldNumericMaskBehavior: TextFieldBehavior {
         let beginning = textField.beginningOfDocument
         let start = textField.positionFromPosition(beginning, offset: range.location)!
 
-        let oldString = textField.text as NSString
+        let oldString = NSString(string: textField.text!)
         let text = oldString.stringByReplacingCharactersInRange(range, withString: string)
-        textField.text = mask(text)
+        let maskedText = mask(text)
+        textField.text = maskedText
 
-        var diff = count(textField.text) - oldString.length
+        var diff = maskedText.characters.count - oldString.length
         if diff < 0 { diff = 0 }
-        let newCursorPosition = textField.positionFromPosition(start, offset: diff)
-        let newSelectedRange = textField.textRangeFromPosition(newCursorPosition, toPosition: newCursorPosition)
-        textField.selectedTextRange = newSelectedRange
+        if let newCursorPosition = textField.positionFromPosition(start, offset: diff) {
+            let newSelectedRange = textField.textRangeFromPosition(newCursorPosition, toPosition: newCursorPosition)
+            textField.selectedTextRange = newSelectedRange
+        }
+
         return false
     }
     

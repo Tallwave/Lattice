@@ -24,7 +24,7 @@ enum CreditCard {
     */
     init(cardNumber: String) {
         let startIndex = cardNumber.startIndex
-        let endIndex = advance(cardNumber.startIndex, 1)
+        let endIndex = cardNumber.startIndex.advancedBy(1)
         let firstChar = cardNumber.substringWithRange(Range<String.Index>(start: startIndex, end: endIndex))
         switch firstChar {
             case "3": self = .Amex
@@ -50,7 +50,7 @@ enum CreditCard {
 */
 public class TextFieldCreditCardMaskBehavior: TextFieldNumericMaskBehavior {
     public override func mask(text: String) -> String {
-        if count(text) == 0 {
+        if text.characters.count == 0 {
             return super.mask(text)
         }
         let card = CreditCard(cardNumber: text)
