@@ -17,7 +17,7 @@ class TextFieldBehaviorContainer: NSObject, UITextFieldDelegate {
     /**
     Adds the `behavior` to the group.
     
-    :param: behavior The `Behavior` to add.
+    - parameter behavior: The `Behavior` to add.
     */
     func addBehavior(behavior: TextFieldBehavior) {
         behaviors.append(behavior)

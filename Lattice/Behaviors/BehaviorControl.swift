@@ -46,14 +46,14 @@ public class BehaviorControl: UIControl {
         objc_setAssociatedObject(object,
             &AssociatedKeys.DescriptiveName,
             self,
-            UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+            objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
     
     private func releaseLifetimeFromObject(object: NSObject) {
         objc_setAssociatedObject(object,
             &AssociatedKeys.DescriptiveName,
             nil,
-            UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
+            objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
 
 }

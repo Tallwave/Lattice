@@ -19,6 +19,6 @@ public class RequiredTextValidator: TextControlValidator {
     
     override func validateText(text: String) -> Bool {
         let textToValidate = trimEndsOfText ? text.stringByTrimmingWhitespace() : text
-        return count(textToValidate) > 0
+        return textToValidate.characters.count > 0
     }
 }

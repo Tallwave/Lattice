@@ -15,6 +15,6 @@ public class MaxLengthValidator: TextControlValidator {
     @IBInspectable var maximumLength: Int = 0
     
     override func validateText(text: String) -> Bool {
-        return count(text) <= maximumLength
+        return text.characters.count <= maximumLength
     }
 }

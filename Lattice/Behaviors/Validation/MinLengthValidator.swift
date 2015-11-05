@@ -15,6 +15,6 @@ public class MinLengthValidator: TextControlValidator {
     @IBInspectable var minimumLength: Int = 0
     
     override func validateText(text: String) -> Bool {
-        return count(text) >= minimumLength
+        return text.characters.count >= minimumLength
     }
 }

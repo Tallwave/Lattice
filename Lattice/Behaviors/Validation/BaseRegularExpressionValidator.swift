@@ -18,8 +18,8 @@ public class BaseRegularExpressionValidator: TextControlValidator {
     True if the `text` passes the `pattern` regular expression.
     */
     override func validateText(text: String) -> Bool {
-        if count(text) == 0 { return super.validateText(text) }
-        if let match = text.rangeOfString(pattern, options: .RegularExpressionSearch) {
+        if text.characters.count == 0 { return super.validateText(text) }
+        if let _ = text.rangeOfString(pattern, options: .RegularExpressionSearch) {
             return true
         }
         return false

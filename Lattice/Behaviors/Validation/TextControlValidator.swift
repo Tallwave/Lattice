@@ -25,7 +25,10 @@ public class TextControlValidator: Validator {
     }
     
     private func validateTextField(textfield: UITextField) -> Bool {
-        return validateText(textfield.text)
+        if let text = textfield.text {
+            return validateText(text)
+        }
+        return true
     }
     
     private func validateTextView(textview: UITextView) -> Bool {

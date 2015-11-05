@@ -4,7 +4,7 @@ import UIKit
 
 class Foo {
     func sayHi() {
-        println("say: \(text())")
+        print("say: \(text())")
     }
     
     private func text() -> String {

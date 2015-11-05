@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Lattice'
-  s.version = '0.1.1'
+  s.version = '0.2'
   s.license = 'MIT'
   s.summary = 'Reusable UI Code Pieces'
   s.homepage = 'https://github.com/Tallwave/Lattice'
