@@ -3,7 +3,7 @@
 ![Lattice: Boilerplate Removal Library](http://tallwave.github.io/Lattice/assets/Lattice.png)
 
 [![Build Status](https://travis-ci.org/Tallwave/Lattice.svg)](https://travis-ci.org/Tallwave/Lattice)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Lattice.svg)](https://img.shields.io/cocoapods/v/Lattice.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Lattice.svg)](https://img.shields.io/cocoapods/v/Lattice.svg)
 
 
 *An interlaced structure or pattern fastened together, used typically as support.*
